@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chmsuBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1218" />
+      <stop offset="100%" stop-color="#281622" />
+    </linearGradient>
+    <linearGradient id="roseAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D56989" />
+      <stop offset="100%" stop-color="#EA9CAF" />
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C2DC80" />
+      <stop offset="100%" stop-color="#8DA848" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#chmsuBg)" />
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="60" rx="16" fill="#20131C" />
+  <circle cx="30" cy="30" r="10" fill="#D56989" />
+  <text x="26" y="34" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800">C</text>
+  <text x="50" y="36" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">CHMSU BSIS • Degree Progress &amp; Academic Advising Portal</text>
+  <rect x="660" y="16" width="115" height="26" rx="13" fill="url(#limeGrad)" />
+  <text x="675" y="33" fill="#1C240A" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800">ACAD YEAR 25-26</text>
+
+  <!-- Left Sidebar: Student Degree Progress -->
+  <rect x="25" y="80" width="225" height="395" rx="12" fill="#231520" stroke="#D56989" stroke-width="1" stroke-opacity="0.25" />
+  
+  <!-- Student Info Card -->
+  <rect x="40" y="100" width="195" height="75" rx="8" fill="#2E1B29" />
+  <circle cx="65" cy="135" r="16" fill="url(#roseAccent)" />
+  <text x="59" y="139" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800">AO</text>
+  <text x="90" y="128" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Angela Oñate</text>
+  <text x="90" y="143" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">BSIS - Year 3</text>
+  <text x="90" y="157" fill="#C2DC80" font-family="'JetBrains Mono', monospace" font-size="9">ID: 2023-CH-0482</text>
+
+  <!-- Progress Ring -->
+  <text x="40" y="200" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Curriculum Completion</text>
+  <rect x="40" y="215" width="195" height="12" rx="6" fill="#3D2436" />
+  <rect x="40" y="215" width="145" height="12" rx="6" fill="url(#roseAccent)" />
+  <text x="40" y="245" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800">74%</text>
+  <text x="85" y="243" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">108 of 146 Units</text>
+
+  <!-- Advising Milestones -->
+  <text x="40" y="280" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Department Status</text>
+  
+  <rect x="40" y="295" width="195" height="32" rx="6" fill="#1C1119" stroke="#C2DC80" stroke-width="1" stroke-opacity="0.4" />
+  <circle cx="55" cy="311" r="5" fill="#C2DC80" />
+  <text x="68" y="315" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Prerequisites Cleared</text>
+
+  <rect x="40" y="335" width="195" height="32" rx="6" fill="#1C1119" stroke="#EA9CAF" stroke-width="1" stroke-opacity="0.4" />
+  <circle cx="55" cy="351" r="5" fill="#EA9CAF" />
+  <text x="68" y="355" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Advising Form Submitted</text>
+
+  <rect x="40" y="375" width="195" height="32" rx="6" fill="#1C1119" stroke="#D56989" stroke-width="1" stroke-opacity="0.4" />
+  <circle cx="55" cy="391" r="5" fill="#D56989" />
+  <text x="68" y="395" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Capstone Concept Approved</text>
+
+  <rect x="40" y="420" width="195" height="38" rx="8" fill="url(#roseAccent)" />
+  <text x="60" y="443" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">Book Advisor Meeting</text>
+
+  <!-- Right Area: Interactive Course Plan Matrix -->
+  <rect x="270" y="80" width="505" height="395" rx="12" fill="#20131D" stroke="#D56989" stroke-width="1" stroke-opacity="0.2" />
+  <text x="290" y="110" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700">Information Systems Course Flow &amp; Evaluation</text>
+  <text x="290" y="128" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Interactive prerequisite tree with grade status and semester load</text>
+
+  <!-- Course Cards Grid -->
+  <!-- Course 1 -->
+  <rect x="290" y="145" width="230" height="70" rx="8" fill="#2A1825" stroke="#C2DC80" stroke-width="1" />
+  <text x="305" y="168" fill="#C2DC80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">IS-301 • 3 UNITS</text>
+  <text x="305" y="185" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Systems Analysis &amp; Design</text>
+  <text x="305" y="200" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Completed • Grade: 1.25 (Superior)</text>
+
+  <!-- Course 2 -->
+  <rect x="535" y="145" width="220" height="70" rx="8" fill="#2A1825" stroke="#C2DC80" stroke-width="1" />
+  <text x="550" y="168" fill="#C2DC80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">IS-302 • 3 UNITS</text>
+  <text x="550" y="185" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Enterprise Database Systems</text>
+  <text x="550" y="200" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Completed • Grade: 1.50</text>
+
+  <!-- Course 3 -->
+  <rect x="290" y="225" width="230" height="70" rx="8" fill="#331D2E" stroke="#EA9CAF" stroke-width="1" />
+  <text x="305" y="248" fill="#EA9CAF" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">IS-303 • 3 UNITS</text>
+  <text x="305" y="265" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">UI/UX &amp; Human-Computer Interaction</text>
+  <text x="305" y="280" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">In Progress • Midterm Project: A+</text>
+
+  <!-- Course 4 -->
+  <rect x="535" y="225" width="220" height="70" rx="8" fill="#331D2E" stroke="#EA9CAF" stroke-width="1" />
+  <text x="550" y="248" fill="#EA9CAF" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">IS-304 • 3 UNITS</text>
+  <text x="550" y="265" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Business Process Engineering</text>
+  <text x="550" y="280" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">In Progress • Case Study Approved</text>
+
+  <!-- Course 5 -->
+  <rect x="290" y="305" width="230" height="70" rx="8" fill="#251621" stroke="#D56989" stroke-width="1" stroke-dasharray="4 4" />
+  <text x="305" y="328" fill="#D56989" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">IS-401 • 3 UNITS</text>
+  <text x="305" y="345" fill="#EAD9E2" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">IS Project Management</text>
+  <text x="305" y="360" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Upcoming • Pre-requisites fulfilled</text>
+
+  <!-- Course 6 -->
+  <rect x="535" y="305" width="220" height="70" rx="8" fill="#251621" stroke="#D56989" stroke-width="1" stroke-dasharray="4 4" />
+  <text x="550" y="328" fill="#D56989" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">IS-402 • 3 UNITS</text>
+  <text x="550" y="345" fill="#EAD9E2" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Capstone Project 1</text>
+  <text x="550" y="360" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Upcoming • Title Defense Stage</text>
+
+  <!-- Bottom Analytics Bar -->
+  <rect x="290" y="390" width="465" height="65" rx="8" fill="#180E16" stroke="#C2DC80" stroke-width="1" stroke-opacity="0.3" />
+  <text x="305" y="415" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Academic Standing: Dean's Honor Roll Candidate</text>
+  <text x="305" y="435" fill="#D0C2CA" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Cumulative GPA: 1.38 • Completed Research: "Optimizing LGU Information Flows in Negros Occidental"</text>
+</svg>

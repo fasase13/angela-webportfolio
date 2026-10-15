@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D1C26" />
+      <stop offset="100%" stop-color="#191117" />
+    </linearGradient>
+    <linearGradient id="headerGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D56989" />
+      <stop offset="100%" stop-color="#EA9CAF" />
+    </linearGradient>
+    <linearGradient id="accentStem1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C2DC80" />
+      <stop offset="100%" stop-color="#9EBA56" />
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" rx="16" fill="url(#bgGrad1)" />
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="#D56989" stroke-opacity="0.1" stroke-width="1">
+    <line x1="0" y1="80" x2="800" y2="80" />
+    <line x1="220" y1="80" x2="220" y2="500" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="360" x2="800" y2="360" />
+  </g>
+
+  <!-- App Header Bar -->
+  <rect x="0" y="0" width="800" height="60" rx="16" fill="#241720" />
+  <circle cx="30" cy="30" r="6" fill="#D56989" />
+  <circle cx="50" cy="30" r="6" fill="#EA9CAF" />
+  <circle cx="70" cy="30" r="6" fill="#C2DC80" />
+  
+  <text x="100" y="36" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Talisay City BPLO • Digital Permitting &amp; Tracking Portal</text>
+  <rect x="650" y="18" width="120" height="24" rx="12" fill="url(#accentStem1)" />
+  <text x="670" y="34" fill="#1F260C" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800">STATUS: LIVE</text>
+
+  <!-- Sidebar -->
+  <rect x="20" y="80" width="180" height="400" rx="12" fill="#22161E" />
+  <rect x="35" y="105" width="150" height="32" rx="8" fill="url(#headerGrad1)" opacity="0.9" />
+  <text x="50" y="126" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">Application Queue</text>
+  
+  <rect x="35" y="150" width="150" height="28" rx="6" fill="#2E1F2A" />
+  <text x="50" y="169" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Document Review</text>
+  
+  <rect x="35" y="190" width="150" height="28" rx="6" fill="#2E1F2A" />
+  <text x="50" y="209" fill="#E0D2DA" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Fee Assessment</text>
+
+  <rect x="35" y="230" width="150" height="28" rx="6" fill="#2E1F2A" />
+  <text x="50" y="249" fill="#E0D2DA" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Permit Issuance</text>
+
+  <rect x="35" y="420" width="150" height="40" rx="8" fill="#1C1118" stroke="#D56989" stroke-width="1" stroke-opacity="0.3" />
+  <circle cx="55" cy="440" r="12" fill="#D56989" />
+  <text x="50" y="444" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">AO</text>
+  <text x="75" y="437" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">Angela Oñate</text>
+  <text x="75" y="450" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">OJT Specialist</text>
+
+  <!-- Main Content Dashboard -->
+  <!-- Stat Cards -->
+  <g filter="url(#shadow1)">
+    <!-- Stat 1 -->
+    <rect x="220" y="80" width="170" height="85" rx="10" fill="#271822" stroke="#D56989" stroke-width="1" stroke-opacity="0.3" />
+    <text x="235" y="105" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Total Filings Today</text>
+    <text x="235" y="138" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800">142</text>
+    <rect x="330" y="120" width="45" height="18" rx="9" fill="url(#accentStem1)" />
+    <text x="338" y="133" fill="#1A240A" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">+18%</text>
+
+    <!-- Stat 2 -->
+    <rect x="410" y="80" width="170" height="85" rx="10" fill="#271822" stroke="#D56989" stroke-width="1" stroke-opacity="0.3" />
+    <text x="425" y="105" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Verified Documents</text>
+    <text x="425" y="138" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800">118</text>
+    <text x="520" y="133" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">83% Clean</text>
+
+    <!-- Stat 3 -->
+    <rect x="600" y="80" width="175" height="85" rx="10" fill="#271822" stroke="#D56989" stroke-width="1" stroke-opacity="0.3" />
+    <text x="615" y="105" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Avg Turnaround</text>
+    <text x="615" y="138" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800">14m</text>
+    <text x="705" y="133" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">-32m peak</text>
+  </g>
+
+  <!-- Table Container -->
+  <rect x="220" y="180" width="555" height="300" rx="10" fill="#21151E" stroke="#EA9CAF" stroke-width="1" stroke-opacity="0.15" />
+  <text x="240" y="210" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Active Permit Review Queue</text>
+  <text x="660" y="210" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Auto-refresh: On</text>
+
+  <!-- Table Header -->
+  <rect x="240" y="225" width="515" height="26" rx="4" fill="#2C1B27" />
+  <text x="250" y="242" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">TRACKING #</text>
+  <text x="360" y="242" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">BUSINESS NAME</text>
+  <text x="530" y="242" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">BARANGAY</text>
+  <text x="660" y="242" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">STATUS</text>
+
+  <!-- Row 1 -->
+  <line x1="240" y1="285" x2="755" y2="285" stroke="#382332" stroke-width="1" />
+  <text x="250" y="273" fill="#E8D8E0" font-family="'JetBrains Mono', monospace" font-size="10">TAL-2026-0891</text>
+  <text x="360" y="273" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Negros Agro-Commercial</text>
+  <text x="530" y="273" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Zone 5</text>
+  <rect x="655" y="260" width="75" height="18" rx="9" fill="#1C3823" stroke="#C2DC80" stroke-width="1" />
+  <text x="667" y="272" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">APPROVED</text>
+
+  <!-- Row 2 -->
+  <line x1="240" y1="325" x2="755" y2="325" stroke="#382332" stroke-width="1" />
+  <text x="250" y="313" fill="#E8D8E0" font-family="'JetBrains Mono', monospace" font-size="10">TAL-2026-0892</text>
+  <text x="360" y="313" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Talisay Heritage Bakery</text>
+  <text x="530" y="313" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Zone 2</text>
+  <rect x="655" y="300" width="75" height="18" rx="9" fill="#3D202D" stroke="#D56989" stroke-width="1" />
+  <text x="670" y="312" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">REVIEW</text>
+
+  <!-- Row 3 -->
+  <line x1="240" y1="365" x2="755" y2="365" stroke="#382332" stroke-width="1" />
+  <text x="250" y="353" fill="#E8D8E0" font-family="'JetBrains Mono', monospace" font-size="10">TAL-2026-0893</text>
+  <text x="360" y="353" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Silay-Talisay Express Logistics</text>
+  <text x="530" y="353" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Zone 12</text>
+  <rect x="655" y="340" width="75" height="18" rx="9" fill="#1C3823" stroke="#C2DC80" stroke-width="1" />
+  <text x="667" y="352" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">APPROVED</text>
+
+  <!-- Row 4 -->
+  <line x1="240" y1="405" x2="755" y2="405" stroke="#382332" stroke-width="1" />
+  <text x="250" y="393" fill="#E8D8E0" font-family="'JetBrains Mono', monospace" font-size="10">TAL-2026-0894</text>
+  <text x="360" y="393" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Campuestohan Resto &amp; Cafe</text>
+  <text x="530" y="393" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Zone 5</text>
+  <rect x="655" y="380" width="75" height="18" rx="9" fill="#2E2818" stroke="#E5C158" stroke-width="1" />
+  <text x="672" y="392" fill="#E5C158" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">PENDING</text>
+
+  <!-- Visual Workflow Diagram Mini Card -->
+  <rect x="240" y="425" width="515" height="42" rx="6" fill="#1A1118" stroke="#D56989" stroke-width="1" stroke-opacity="0.3" />
+  <text x="255" y="450" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">BPLO Workflow Pipeline:</text>
+  <text x="400" y="450" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Intake ➔ Document Verification ➔ Tax Assessment ➔ Permit Release</text>
+</svg>

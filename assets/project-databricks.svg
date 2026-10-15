@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140E14" />
+      <stop offset="100%" stop-color="#22131F" />
+    </linearGradient>
+    <linearGradient id="chartGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D56989" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#D56989" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="chartGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C2DC80" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#C2DC80" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D56989" />
+      <stop offset="100%" stop-color="#EA9CAF" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#dbBg)" />
+
+  <!-- Nav bar -->
+  <rect x="0" y="0" width="800" height="55" rx="16" fill="#1C111A" />
+  <rect x="25" y="16" width="24" height="24" rx="6" fill="#D56989" />
+  <text x="32" y="32" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800">&gt;_</text>
+  <text x="60" y="34" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">Databricks Lakehouse SQL Analytics &amp; Visual BI</text>
+  <rect x="640" y="14" width="135" height="26" rx="13" fill="#281A25" stroke="#C2DC80" stroke-width="1" />
+  <circle cx="655" cy="27" r="4" fill="#C2DC80" />
+  <text x="668" y="31" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">SQL Cluster: Online</text>
+
+  <!-- Left: SQL Query Editor Mockup -->
+  <rect x="25" y="75" width="350" height="220" rx="10" fill="#1B1019" stroke="#EA9CAF" stroke-width="1" stroke-opacity="0.2" />
+  <rect x="25" y="75" width="350" height="30" rx="10" fill="#251622" />
+  <text x="40" y="95" fill="#EA9CAF" font-family="'JetBrains Mono', monospace" font-size="10">query_revenue_by_quarter.sql</text>
+  <rect x="300" y="80" width="60" height="20" rx="4" fill="url(#btnGrad)" />
+  <text x="312" y="94" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">Run (F5)</text>
+
+  <g font-family="'JetBrains Mono', monospace" font-size="10" xml:space="preserve">
+    <text x="40" y="125" fill="#EA9CAF">SELECT</text>
+    <text x="85" y="125" fill="#FFFFFF">d.fiscal_quarter,</text>
+    <text x="40" y="145" fill="#D56989">       COUNT</text>
+    <text x="75" y="145" fill="#FFFFFF">(DISTINCT o.order_id) AS total_orders,</text>
+    <text x="40" y="165" fill="#D56989">       ROUND(SUM</text>
+    <text x="105" y="165" fill="#FFFFFF">(o.net_revenue), 2) AS revenue,</text>
+    <text x="40" y="185" fill="#D56989">       AVG</text>
+    <text x="65" y="185" fill="#FFFFFF">(o.margin_pct) AS avg_margin</text>
+    <text x="40" y="205" fill="#EA9CAF">FROM</text>
+    <text x="75" y="205" fill="#C2DC80">analytics_gold.fact_orders</text>
+    <text x="245" y="205" fill="#FFFFFF">o</text>
+    <text x="40" y="225" fill="#EA9CAF">JOIN</text>
+    <text x="75" y="225" fill="#FFFFFF">dim_dates d ON o.date_key = d.date_key</text>
+    <text x="40" y="245" fill="#EA9CAF">GROUP BY</text>
+    <text x="100" y="245" fill="#FFFFFF">1 ORDER BY 1 ASC;</text>
+  </g>
+  <rect x="40" y="260" width="320" height="22" rx="4" fill="#261723" />
+  <text x="50" y="275" fill="#C2DC80" font-family="'JetBrains Mono', monospace" font-size="9">✓ 14,290 rows affected in 0.42s (Warehouse size: X-Small)</text>
+
+  <!-- Right: BI Chart Visualization -->
+  <rect x="395" y="75" width="380" height="220" rx="10" fill="#1B1019" stroke="#D56989" stroke-width="1" stroke-opacity="0.25" />
+  <text x="415" y="102" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Quarterly Net Revenue vs Target ($M)</text>
+  <text x="700" y="102" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">+24.6% YoY</text>
+
+  <!-- Chart Axis & Grid -->
+  <line x1="430" y1="130" x2="745" y2="130" stroke="#3A2333" stroke-width="1" stroke-dasharray="3 3" />
+  <line x1="430" y1="180" x2="745" y2="180" stroke="#3A2333" stroke-width="1" stroke-dasharray="3 3" />
+  <line x1="430" y1="230" x2="745" y2="230" stroke="#3A2333" stroke-width="1" />
+
+  <!-- Bar Charts -->
+  <!-- Q1 -->
+  <rect x="450" y="165" width="35" height="65" rx="4" fill="#D56989" opacity="0.85" />
+  <rect x="490" y="145" width="35" height="85" rx="4" fill="#C2DC80" opacity="0.9" />
+  <text x="475" y="248" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Q1</text>
+
+  <!-- Q2 -->
+  <rect x="540" y="150" width="35" height="80" rx="4" fill="#D56989" opacity="0.85" />
+  <rect x="580" y="130" width="35" height="100" rx="4" fill="#C2DC80" opacity="0.9" />
+  <text x="565" y="248" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Q2</text>
+
+  <!-- Q3 -->
+  <rect x="630" y="135" width="35" height="95" rx="4" fill="#D56989" opacity="0.85" />
+  <rect x="670" y="110" width="35" height="120" rx="4" fill="#C2DC80" opacity="0.9" />
+  <text x="655" y="248" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Q3</text>
+
+  <rect x="430" y="260" width="12" height="12" rx="3" fill="#D56989" />
+  <text x="448" y="270" fill="#E2D4DC" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Actual Revenue</text>
+  <rect x="530" y="260" width="12" height="12" rx="3" fill="#C2DC80" />
+  <text x="548" y="270" fill="#E2D4DC" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Forecast Target</text>
+
+  <!-- Bottom: 3 Metric KPI Cards -->
+  <rect x="25" y="315" width="235" height="160" rx="10" fill="#20131D" stroke="#D56989" stroke-width="1" stroke-opacity="0.2" />
+  <text x="40" y="345" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Data Model Architecture</text>
+  <text x="40" y="375" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800">Star Schema</text>
+  <text x="40" y="405" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Bronze ➔ Silver ➔ Gold Layer</text>
+  <text x="40" y="425" fill="#EAD9E2" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Optimized with Delta Lake Z-Ordering for sub-second BI query latency.</text>
+
+  <rect x="280" y="315" width="235" height="160" rx="10" fill="#20131D" stroke="#D56989" stroke-width="1" stroke-opacity="0.2" />
+  <text x="295" y="345" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Simplilearn / Databricks</text>
+  <text x="295" y="375" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800">Certified Nov '25</text>
+  <text x="295" y="405" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">SQL &amp; BI Visualization</text>
+  <text x="295" y="425" fill="#EAD9E2" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Hands-on experience writing complex window functions and CTEs.</text>
+
+  <rect x="535" y="315" width="240" height="160" rx="10" fill="#20131D" stroke="#D56989" stroke-width="1" stroke-opacity="0.2" />
+  <text x="550" y="345" fill="#EA9CAF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Business Impact</text>
+  <text x="550" y="375" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800">65% Faster</text>
+  <text x="550" y="405" fill="#C2DC80" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Executive Reporting Cycles</text>
+  <text x="550" y="425" fill="#EAD9E2" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Replaced weekly manual exports with automated cloud dashboards.</text>
+</svg>
