@@ -209,40 +209,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalData = {
     'hris-details': {
       title: 'Human Resource Information System (HRIS) — EB Magalona',
-      subtitle: 'Municipal Government Enterprise System • Project Leader / Manager',
-      tags: ['Project Leadership', 'Municipal HRIS', 'Employee Records', 'Attendance Kiosk', 'Role-Based Access'],
+      subtitle: 'Municipal Government Information System',
+      tags: ['Systems Analysis', 'Employee Records', 'Attendance Kiosk', 'Access Control'],
       content: `
         <div style="margin-bottom: 1.5rem;">
           <img src="assets/hris-screenshot.png" alt="EB Magalona HRIS Live Interface Preview" style="width:100%; border-radius: 12px; margin-bottom: 1.25rem; box-shadow: var(--shadow-md);">
           
           <div style="background: var(--bg-canvas-subtle); border: 1px solid var(--border-medium); border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 1.25rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
             <div>
-              <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); display: block;">Project Role</span>
-              <strong style="color: var(--accent-primary); font-size: 1.05rem;">Angela M. Oñate — Project Leader / Manager</strong>
+              <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); display: block;">Role</span>
+              <strong style="color: var(--accent-primary); font-size: 1.02rem;">Angela M. Oñate — Project Manager &amp; Systems Analyst</strong>
             </div>
             <a href="https://hris.lsab.online/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
               Visit Live System ↗
             </a>
           </div>
 
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Project Overview &amp; Purpose</h4>
+          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Project Overview</h4>
           <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
             The <strong>EB Magalona HRIS</strong> is a web-based system designed to manage employee records, monitor attendance, and streamline human resource processes in the municipal government. It provides secure and efficient access to HR-related information for authorized personnel.
           </p>
 
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Angela's Leadership Responsibilities</h4>
+          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Key Contributions &amp; Responsibilities</h4>
           <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
-            <li><strong>Project Management &amp; Scoping:</strong> Spearheaded requirements gathering, sprint milestone coordination, task scheduling, and progress tracking across the development team.</li>
-            <li><strong>Systems Analysis &amp; Workflow Design:</strong> Mapped end-to-end municipal HR workflows, from digital 201 file recordkeeping to automated leave calculation and audit logging.</li>
-            <li><strong>UI/UX Design &amp; Prototyping:</strong> Designed clean, responsive, and accessible dashboards tailored for local government employees and administrators.</li>
-            <li><strong>Deployment &amp; Quality Gatekeeping:</strong> Coordinated system testing, authentication security reviews, and live production deployment at <code>hris.lsab.online</code>.</li>
+            <li><strong>Project Coordination:</strong> Organized requirements gathering, milestone tracking, and task scheduling across the development team.</li>
+            <li><strong>Systems Analysis:</strong> Mapped municipal HR workflows, from digital 201 records to automated leave calculation and audit logging.</li>
+            <li><strong>UI/UX Prototyping:</strong> Designed clean, accessible dashboard layouts tailored for municipal employees and administrators.</li>
+            <li><strong>Deployment Support:</strong> Assisted with system testing, authentication security reviews, and live production deployment at <code>hris.lsab.online</code>.</li>
           </ul>
 
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Key Architectural Features</h4>
+          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Key System Modules</h4>
           <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
-            <li><strong>Employee Directory &amp; 201 Records:</strong> Centralized digitized personnel archives, service records, and departmental structures.</li>
-            <li><strong>Integrated Attendance Kiosk:</strong> Real-time automated time monitoring portal accessible directly via <code>/attendance/kiosk</code>.</li>
-            <li><strong>Multi-Factor &amp; Role-Based Security:</strong> Strict segregation of duties between HR officers, department heads, and municipal executives with Google OAuth support.</li>
+            <li><strong>Employee 201 Records:</strong> Centralized digitized personnel archives, appointment data, and service records.</li>
+            <li><strong>Attendance Kiosk:</strong> Real-time automated time monitoring portal accessible via <code>/attendance/kiosk</code>.</li>
+            <li><strong>Role-Based Security:</strong> Managed permissions for HR officers, department heads, and municipal staff with Google OAuth support.</li>
           </ul>
 
           <div style="text-align: center; margin-top: 1.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1.2rem;">
@@ -453,10 +453,10 @@ EDUCATION:
 - Rafael B. Lacson Memorial High School: Junior High School (2017 - 2021)
 - Talisay South Elementary School (2012 - 2017)
 
-EXPERIENCE & PROJECT LEADERSHIP:
-- Project Leader / Project Manager: Human Resource Information System (HRIS), Municipality of E.B. Magalona (Live: https://hris.lsab.online/login)
-  Web-based system designed to manage employee records, monitor attendance, and streamline human resource processes in the municipal government.
-- On-the-Job Trainee (OJT): Business Permits and Licensing Office (BPLO), Talisay City Hall, Talisay City, Negros Occidental. Assisted with document handling, data encoding, and office-related tasks.
+EXPERIENCE & PROJECTS:
+- Project Manager & Systems Analyst: Human Resource Information System (HRIS), Municipality of E.B. Magalona (Live: https://hris.lsab.online/login)
+  Web-based system designed to manage employee records, monitor attendance, and streamline municipal HR processes.
+- On-the-Job Trainee (OJT): Business Permits and Licensing Office (BPLO), Talisay City Hall, Talisay City, Negros Occidental. Assisted with document handling, data encoding, and office tasks.
 
 SKILLS:
 - Documentation: Research Papers, Reports, System Documentation
