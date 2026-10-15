@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Angela M. Oñate — Information Systems &amp; UI/UX Portfolio</title>
-  <meta name="description" content="Explore project prototypes, system designs, and data models by Angela M. Oñate, including the Talisay City BPLO Portal and CHMSU Advising System.">
+  <meta name="description" content="Human Resource Information System (HRIS) for the Municipal Government of E.B. Magalona — Led and managed by Angela M. Oñate.">
   <meta name="author" content="Angela M. Oñate">
 
   <!-- Immediate Theme Initializer -->
@@ -88,126 +88,116 @@
     <div class="container">
       <!-- Section Header -->
       <div class="section-header">
-        <span class="section-tag">Portfolio Work</span>
-        <h1 class="section-title">Projects &amp; Case Studies</h1>
+        <span class="section-tag">Featured Project</span>
+        <h1 class="section-title">Human Resource Information System (HRIS)</h1>
         <p class="section-desc">
-          Interactive prototypes, government system workflows, and data analytics models solving real operational bottlenecks.
+          A full-scale, web-based municipal enterprise system developed for the local government of E.B. Magalona. Led and managed by Angela M. Oñate.
         </p>
       </div>
 
-      <!-- Filter Tabs -->
-      <div class="projects-filter-bar" role="tablist">
-        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works (4)</button>
-        <button class="filter-btn" data-filter="uiux" role="tab" aria-selected="false">UI/UX Prototypes</button>
-        <button class="filter-btn" data-filter="documentation" role="tab" aria-selected="false">Systems &amp; Documentation</button>
-        <button class="filter-btn" data-filter="analytics" role="tab" aria-selected="false">Data &amp; BI Analytics</button>
+      <!-- Single Featured Project Showcase -->
+      <div style="max-width: 980px; margin: 0 auto;">
+        <article class="project-card" style="border-radius: var(--radius-xl); overflow: hidden; border: 1.5px solid var(--border-medium); box-shadow: var(--shadow-lg);">
+          <!-- Large Project Visual Preview -->
+          <div class="project-preview" style="aspect-ratio: 16 / 9.5; background: #180F17;">
+            <img src="assets/project-hris.svg" alt="EB Magalona Human Resource Information System (HRIS) Interface" loading="eager" style="width: 100%; height: 100%; object-fit: cover;">
+            <span class="project-category-badge" style="background: rgba(18, 11, 16, 0.85); border-color: var(--palette-sorbet-stem); color: var(--palette-sorbet-stem);">
+              🌟 Flagship Enterprise Project • Project Leader
+            </span>
+          </div>
+
+          <!-- Project Body Details -->
+          <div class="project-content" style="padding: 2.8rem 2.4rem;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+              <div>
+                <span class="status-pill" style="margin-bottom: 0.75rem;">
+                  <span class="pulse-dot"></span>
+                  <span>Live Municipal Deployment</span>
+                </span>
+                <h2 style="font-size: clamp(1.8rem, 2.8vw, 2.4rem); font-weight: 800; color: var(--text-primary); margin-bottom: 0.35rem;">
+                  EB Magalona HRIS
+                </h2>
+                <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-primary); font-weight: 700;">
+                  Role: Angela M. Oñate — Project Leader / Manager
+                </div>
+              </div>
+
+              <!-- Live Access Links -->
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="https://hris.lsab.online/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.7rem 1.4rem;">
+                  <span>Open Live HRIS Portal ↗</span>
+                </a>
+                <a href="https://hris.lsab.online/attendance/kiosk" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.7rem 1.4rem;">
+                  <span>Attendance Kiosk ↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <p style="font-size: 1.08rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 2rem;">
+              The <strong>EB Magalona HRIS</strong> is a web-based system designed to manage employee records, monitor attendance, and streamline human resource processes in the municipal government. It provides secure and efficient access to HR-related information for authorized personnel.
+            </p>
+
+            <!-- Key System Pillars / Modules Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-bottom: 2.2rem;">
+              <div class="pillar-box" style="padding: 1.25rem;">
+                <div class="pillar-title">📂 Employee 201 File Records</div>
+                <div class="pillar-desc">Centralized digital repository replacing physical filing cabinets with digitized municipal personnel profiles, job appointments, and service records.</div>
+              </div>
+
+              <div class="pillar-box" style="padding: 1.25rem;">
+                <div class="pillar-title">⏱️ Real-time Attendance Kiosk</div>
+                <div class="pillar-desc">Integrated dedicated kiosk check-in at <code>/attendance/kiosk</code> enabling accurate, automated daily time recording for municipal departments.</div>
+              </div>
+
+              <div class="pillar-box" style="padding: 1.25rem;">
+                <div class="pillar-title">🔒 Role-Based Security &amp; Auth</div>
+                <div class="pillar-desc">Multi-tier role access for HR officers, department heads, and municipal administrators, complete with Google OAuth and password authentication.</div>
+              </div>
+
+              <div class="pillar-box" style="padding: 1.25rem;">
+                <div class="pillar-title">📑 Automated HR Processes</div>
+                <div class="pillar-desc">Streamlining leave applications, approvals, attendance tracking, and administrative compliance reporting across the local government unit.</div>
+              </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="project-tags" style="margin-bottom: 2rem;">
+              <span class="project-tag" style="background: var(--badge-bg-stem); color: var(--badge-text-stem); border-color: var(--badge-border-stem); font-weight: 700;">Project Leadership</span>
+              <span class="project-tag">Systems Analysis &amp; Design</span>
+              <span class="project-tag">Human Resource Information System</span>
+              <span class="project-tag">Municipal Government IS</span>
+              <span class="project-tag">Attendance Kiosk</span>
+              <span class="project-tag">User Experience &amp; Workflow Optimization</span>
+              <span class="project-tag">Role-Based Access Control</span>
+            </div>
+
+            <!-- Deep Dive Case Study Trigger -->
+            <div class="project-footer" style="padding-top: 1.5rem;">
+              <button class="btn btn-stem" data-modal="hris-details" style="font-size: 0.95rem;">
+                <span>Read Full Leadership &amp; Architecture Case Study</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+
+              <a href="https://hris.lsab.online/login" target="_blank" rel="noopener noreferrer" style="font-family: var(--font-mono); font-size: 0.86rem; color: var(--accent-primary); text-decoration: underline;">
+                hris.lsab.online ↗
+              </a>
+            </div>
+          </div>
+        </article>
       </div>
 
-      <!-- Projects Grid -->
-      <div class="projects-grid" id="projects-grid">
-        <!-- Project 1: BPLO Portal -->
-        <article class="project-card" data-category="uiux documentation">
-          <div class="project-preview">
-            <img src="assets/project-bplo.svg" alt="Talisay City BPLO Permitting Portal Interface" loading="lazy">
-            <span class="project-category-badge">UI/UX &amp; Government IS</span>
-          </div>
-          <div class="project-content">
-            <h2 class="project-title">Talisay City BPLO Digital Permitting &amp; Tracking Portal</h2>
-            <p class="project-desc">
-              Derived directly from my OJT experience at Talisay City Hall. Designed a digitized permit application queue and verification dashboard to reduce counter delays and streamline regulatory compliance.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Figma Prototype</span>
-              <span class="project-tag">Workflow Modeling</span>
-              <span class="project-tag">BPLO Intake</span>
-              <span class="project-tag">Government IS</span>
-            </div>
-            <div class="project-footer">
-              <button class="project-link-btn" data-modal="bplo-details">
-                <span>View Case Study</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2: CHMSU Advising Portal -->
-        <article class="project-card" data-category="uiux documentation">
-          <div class="project-preview">
-            <img src="assets/project-chmsu.svg" alt="CHMSU Academic Advising & Course Tracker" loading="lazy">
-            <span class="project-category-badge">Academic IS &amp; HCI</span>
-          </div>
-          <div class="project-content">
-            <h2 class="project-title">CHMSU Degree Progress &amp; Academic Advising Portal</h2>
-            <p class="project-desc">
-              A student-faculty portal prototype for Information Systems majors featuring visual prerequisite trees, semester load evaluations, and advisor approval checkpoints.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Adobe XD</span>
-              <span class="project-tag">Figma</span>
-              <span class="project-tag">Curriculum Matrix</span>
-              <span class="project-tag">Prerequisite Tree</span>
-            </div>
-            <div class="project-footer">
-              <button class="project-link-btn" data-modal="chmsu-details">
-                <span>View Case Study</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 3: Databricks BI Dashboard -->
-        <article class="project-card" data-category="analytics">
-          <div class="project-preview">
-            <img src="assets/project-databricks.svg" alt="Databricks Lakehouse SQL Analytics & Visual BI" loading="lazy">
-            <span class="project-category-badge">Cloud Data &amp; SQL</span>
-          </div>
-          <div class="project-content">
-            <h2 class="project-title">Databricks SQL Analytics &amp; Visual BI Dashboard</h2>
-            <p class="project-desc">
-              Applying concepts from my Simplilearn / Databricks certification. Formulated multi-table SQL queries, star schemas, and visual KPI charts to evaluate regional revenue and margin performance.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Databricks SQL</span>
-              <span class="project-tag">Delta Lakehouse</span>
-              <span class="project-tag">BI Dashboards</span>
-              <span class="project-tag">Data Modeling</span>
-            </div>
-            <div class="project-footer">
-              <button class="project-link-btn" data-modal="databricks-details">
-                <span>View Analytics Report</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 4: Microsoft Excel Business Analytics -->
-        <article class="project-card" data-category="analytics documentation">
-          <div class="project-preview">
-            <img src="assets/project-excel.svg" alt="Microsoft Excel Business Analytics & Reporting Model" loading="lazy">
-            <span class="project-category-badge">Business Analytics</span>
-          </div>
-          <div class="project-content">
-            <h2 class="project-title">Advanced Excel Business Analytics &amp; Pivot Model</h2>
-            <p class="project-desc">
-              Multi-worksheet analytical model certified under Microsoft / Simplilearn. Features dynamic slicers, nested XLOOKUP/VLOOKUP functions, statistical regression, and executive summaries.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Microsoft Excel</span>
-              <span class="project-tag">Pivot Tables</span>
-              <span class="project-tag">Sensitivity Analysis</span>
-              <span class="project-tag">Executive Reporting</span>
-            </div>
-            <div class="project-footer">
-              <button class="project-link-btn" data-modal="excel-details">
-                <span>View Model Details</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-            </div>
-          </div>
-        </article>
+      <!-- Leadership Highlight Card -->
+      <div class="about-card" style="max-width: 980px; margin: 3.5rem auto 0; text-align: center; background: var(--bg-canvas-subtle); padding: 2.8rem 2rem;">
+        <span class="section-tag" style="margin-bottom: 0.75rem;">Leadership in Action</span>
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Bridging People, Processes, and Digital Architecture</h3>
+        <p style="color: var(--text-secondary); max-width: 650px; margin: 0 auto 1.75rem; font-size: 1rem; line-height: 1.65;">
+          As Project Leader and Manager of the EB Magalona HRIS, Angela guided the project lifecycle from initial requirements gathering and municipal stakeholder consultation to system deployment, user experience design, and workflow validation.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="about.html" class="btn btn-secondary">Learn More About Angela</a>
+          <a href="contact.html" class="btn btn-primary">Connect for Collaborations</a>
+        </div>
       </div>
     </div>
   </main>

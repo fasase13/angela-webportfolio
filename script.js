@@ -207,90 +207,53 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalCloseBtn = document.getElementById('modal-close-btn');
 
   const modalData = {
-    'bplo-details': {
-      title: 'Talisay City BPLO Digital Permitting & Tracking Portal',
-      subtitle: 'Government Information Systems & UX Case Study',
-      tags: ['Figma', 'Adobe XD', 'Government IS', 'Process Engineering'],
+    'hris-details': {
+      title: 'Human Resource Information System (HRIS) — EB Magalona',
+      subtitle: 'Municipal Government Enterprise System • Project Leader / Manager',
+      tags: ['Project Leadership', 'Municipal HRIS', 'Employee Records', 'Attendance Kiosk', 'Role-Based Access'],
       content: `
         <div style="margin-bottom: 1.5rem;">
-          <img src="assets/project-bplo.svg" alt="BPLO Permit System Preview" style="width:100%; border-radius: 12px; margin-bottom: 1.25rem;">
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Problem Context & Origin</h4>
-          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
-            During my On-the-Job Training at the Talisay City Hall Business Permits and Licensing Office (BPLO), I observed physical document handling delays, repeated encoding errors, and citizens experiencing prolonged queue times during peak renewal seasons.
+          <img src="assets/project-hris.svg" alt="EB Magalona HRIS Dashboard Preview" style="width:100%; border-radius: 12px; margin-bottom: 1.25rem;">
+          
+          <div style="background: var(--bg-canvas-subtle); border: 1px solid var(--border-medium); border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 1.25rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+            <div>
+              <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); display: block;">Project Role</span>
+              <strong style="color: var(--accent-primary); font-size: 1.05rem;">Angela M. Oñate — Project Leader / Manager</strong>
+            </div>
+            <a href="https://hris.lsab.online/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+              Visit Live System ↗
+            </a>
+          </div>
+
+          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Project Overview &amp; Purpose</h4>
+          <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+            The <strong>EB Magalona HRIS</strong> is a web-based system designed to manage employee records, monitor attendance, and streamline human resource processes in the municipal government. It provides secure and efficient access to HR-related information for authorized personnel.
           </p>
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">The Solution Design</h4>
-          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
-            I designed an end-to-end interface in Figma providing a unified citizen permit portal and an internal administrative review dashboard. The workflow incorporates automatic document completeness checklists, tracking numbers, and fee estimation before counter submission.
-          </p>
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Key Outcomes & Deliverables</h4>
-          <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.6;">
-            <li>High-fidelity interactive prototype in Figma with complete auto-layout component library.</li>
-            <li>System flowcharts mapping the 4-stage pipeline: Intake ➔ Verification ➔ Assessment ➔ Release.</li>
-            <li>Estimated 45% reduction in physical queue times and zero misplaced physical documents.</li>
+
+          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Angela's Leadership Responsibilities</h4>
+          <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+            <li><strong>Project Management &amp; Scoping:</strong> Spearheaded requirements gathering, sprint milestone coordination, task scheduling, and progress tracking across the development team.</li>
+            <li><strong>Systems Analysis &amp; Workflow Design:</strong> Mapped end-to-end municipal HR workflows, from digital 201 file recordkeeping to automated leave calculation and audit logging.</li>
+            <li><strong>UI/UX Design &amp; Prototyping:</strong> Designed clean, responsive, and accessible dashboards tailored for local government employees and administrators.</li>
+            <li><strong>Deployment &amp; Quality Gatekeeping:</strong> Coordinated system testing, authentication security reviews, and live production deployment at <code>hris.lsab.online</code>.</li>
           </ul>
+
+          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Key Architectural Features</h4>
+          <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+            <li><strong>Employee Directory &amp; 201 Records:</strong> Centralized digitized personnel archives, service records, and departmental structures.</li>
+            <li><strong>Integrated Attendance Kiosk:</strong> Real-time automated time monitoring portal accessible directly via <code>/attendance/kiosk</code>.</li>
+            <li><strong>Multi-Factor &amp; Role-Based Security:</strong> Strict segregation of duties between HR officers, department heads, and municipal executives with Google OAuth support.</li>
+          </ul>
+
+          <div style="text-align: center; margin-top: 1.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1.2rem;">
+            <a href="https://hris.lsab.online/login" target="_blank" rel="noopener noreferrer" class="btn btn-stem" style="display: inline-flex;">
+              Open https://hris.lsab.online/login ↗
+            </a>
+          </div>
         </div>
       `
     },
-    'chmsu-details': {
-      title: 'CHMSU Degree Progress & Academic Advising Portal',
-      subtitle: 'Higher Education Information Systems Prototype',
-      tags: ['Figma', 'Adobe XD', 'Prerequisite Tree', 'Student Advising'],
-      content: `
-        <div style="margin-bottom: 1.5rem;">
-          <img src="assets/project-chmsu.svg" alt="CHMSU Advising Portal Preview" style="width:100%; border-radius: 12px; margin-bottom: 1.25rem;">
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Project Overview</h4>
-          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
-            An academic system interface designed for Carlos Hilado Memorial State University BSIS students and faculty advisors. Eliminates manual paper evaluation checklists by displaying an interactive, color-coded prerequisite tree.
-          </p>
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Features Implemented</h4>
-          <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.6;">
-            <li>Real-time degree completion tracker showing passed units against the 146-unit graduation requirement.</li>
-            <li>Interactive prerequisite dependency graph preventing students from enrolling in advanced courses before clearing foundational prerequisites.</li>
-            <li>Integrated advisor messaging and capstone milestone defense checkpoint approvals.</li>
-          </ul>
-        </div>
-      `
-    },
-    'databricks-details': {
-      title: 'Databricks Lakehouse SQL & Visual BI Dashboard',
-      subtitle: 'Cloud Business Intelligence & Analytical Data Modeling',
-      tags: ['Databricks SQL', 'Delta Lake', 'BI Visualization', 'ETL Gold Layer'],
-      content: `
-        <div style="margin-bottom: 1.5rem;">
-          <img src="assets/project-databricks.svg" alt="Databricks SQL Analytics Preview" style="width:100%; border-radius: 12px; margin-bottom: 1.25rem;">
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Technical Overview</h4>
-          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
-            Built as part of my Simplilearn / Databricks certification curriculum. Models commercial transaction data into Bronze, Silver, and Gold Delta tables using a performant Star Schema.
-          </p>
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">SQL Capabilities Demonstrated</h4>
-          <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.6;">
-            <li>Complex multi-table queries with Common Table Expressions (CTEs) and window functions.</li>
-            <li>Sub-second query responses across 14,000+ transaction rows using Z-Ordering.</li>
-            <li>Visual KPI dashboards delivering automated quarterly revenue and forecast variance analysis.</li>
-          </ul>
-        </div>
-      `
-    },
-    'excel-details': {
-      title: 'Advanced Microsoft Excel Business Analytics & Pivot Model',
-      subtitle: 'Certified Financial & Operational Decision Model',
-      tags: ['Excel Pivots', 'XLOOKUP', 'Sensitivity Analysis', 'Executive Reporting'],
-      content: `
-        <div style="margin-bottom: 1.5rem;">
-          <img src="assets/project-excel.svg" alt="Excel Analytics Preview" style="width:100%; border-radius: 12px; margin-bottom: 1.25rem;">
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Model Architecture</h4>
-          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
-            Certified under Microsoft / Simplilearn SkillUp. Integrates dynamic multi-sheet data with dynamic slicers, automated error handling, and statistical forecasting.
-          </p>
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Key Analytical Competencies</h4>
-          <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.6;">
-            <li>Multi-dimensional Pivot Tables and Pivot Charts with interactive category slicers.</li>
-            <li>Nested XLOOKUP, INDEX/MATCH, and conditional statistical aggregations.</li>
-            <li>Executive dashboard presentation with custom donut charts and variance alerts.</li>
-          </ul>
-        </div>
-      `
-    },
+
     'ibm-ba': {
       title: 'Introduction to Business Analysis',
       subtitle: 'IBM / Coursera Credential',
@@ -490,7 +453,9 @@ EDUCATION:
 - Rafael B. Lacson Memorial High School: Junior High School (2017 - 2021)
 - Talisay South Elementary School (2012 - 2017)
 
-EXPERIENCE:
+EXPERIENCE & PROJECT LEADERSHIP:
+- Project Leader / Project Manager: Human Resource Information System (HRIS), Municipality of E.B. Magalona (Live: https://hris.lsab.online/login)
+  Web-based system designed to manage employee records, monitor attendance, and streamline human resource processes in the municipal government.
 - On-the-Job Trainee (OJT): Business Permits and Licensing Office (BPLO), Talisay City Hall, Talisay City, Negros Occidental. Assisted with document handling, data encoding, and office-related tasks.
 
 SKILLS:
