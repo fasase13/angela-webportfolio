@@ -259,116 +259,280 @@ document.addEventListener('DOMContentLoaded', () => {
       subtitle: 'IBM / Coursera Credential',
       tags: ['Business Analysis', 'Requirements Elicitation', 'Gap Analysis', 'Stakeholder Management'],
       content: `
-        <div style="text-align: center; margin-bottom: 1.5rem;">
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">🏅</div>
-          <span class="status-pill" style="margin: 0 auto 1rem;">Verified Professional Credential</span>
-          <p style="color: var(--text-secondary); line-height: 1.6; margin-top: 1rem;">
-            <strong>Issuing Organization:</strong> IBM (Offered through Coursera)<br>
-            <strong>Completion Date:</strong> November 2025<br>
-            <strong>Core Topics Mastered:</strong>
-          </p>
-          <div style="text-align: left; background: var(--bg-canvas-subtle); padding: 1.2rem; border-radius: 12px; margin-top: 1rem;">
-            <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.6;">
-              <li>Eliciting and documenting business, stakeholder, and system requirements.</li>
-              <li>Performing As-Is vs. To-Be gap analysis and feasibility studies.</li>
-              <li>Facilitating cross-functional stakeholder interviews and consensus.</li>
-              <li>Creating standardized Software Requirements Specifications (SRS).</li>
+        <div>
+          <div class="modal-cert-viewer">
+            <a href="assets/cert-ibm.jpg" target="_blank" title="Click to view full image in high resolution">
+              <img src="assets/cert-ibm.jpg" alt="IBM Introduction to Business Analysis Certificate for Angela Oñate" class="modal-cert-img" loading="lazy">
+            </a>
+          </div>
+
+          <div class="modal-cert-actions">
+            <a href="https://coursera.org/verify/7GK9UQIISPXL" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              Verify Online at Coursera ↗
+            </a>
+            <a href="assets/cert-ibm.jpg" target="_blank" class="btn btn-secondary btn-sm">
+              Open Full Resolution Image ↗
+            </a>
+          </div>
+
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Recipient</span>
+              <span class="modal-meta-value">Angela Oñate</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Completion Date</span>
+              <span class="modal-meta-value">November 18, 2025</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Issuing Body</span>
+              <span class="modal-meta-value">IBM (Offered via Coursera)</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Verification Code</span>
+              <span class="modal-meta-value"><code>7GK9UQIISPXL</code></span>
+            </div>
+            <div class="modal-meta-item" style="grid-column: 1 / -1;">
+              <span class="modal-meta-label">Authorized Signatory</span>
+              <span class="modal-meta-value">Antonio Cangiano, Director, IBM Skills Network</span>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-canvas-subtle); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.6rem;">Key Competencies Mastered</h4>
+            <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+              <li>Eliciting, analyzing, and documenting stakeholder and business requirements.</li>
+              <li>Performing As-Is vs. To-Be gap analysis and feasibility assessments.</li>
+              <li>Facilitating cross-functional communications and stakeholder alignment.</li>
+              <li>Formulating Software Requirements Specifications (SRS) and project scoping.</li>
             </ul>
           </div>
         </div>
       `
     },
+
     'ms-excel': {
       title: 'Business Analytics with Excel',
       subtitle: 'Microsoft / Simplilearn SkillUp Credential',
       tags: ['Microsoft Excel', 'Pivot Tables', 'Descriptive Statistics', 'Visual Dashboards'],
       content: `
-        <div style="text-align: center; margin-bottom: 1.5rem;">
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">📊</div>
-          <span class="status-pill" style="margin: 0 auto 1rem;">Verified Professional Credential</span>
-          <p style="color: var(--text-secondary); line-height: 1.6; margin-top: 1rem;">
-            <strong>Issuing Organization:</strong> Microsoft / Simplilearn SkillUp<br>
-            <strong>Completion Date:</strong> November 2025<br>
-            <strong>Core Topics Mastered:</strong>
-          </p>
-          <div style="text-align: left; background: var(--bg-canvas-subtle); padding: 1.2rem; border-radius: 12px; margin-top: 1rem;">
-            <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.6;">
-              <li>Advanced Excel data analysis, filtering, and conditional logic.</li>
-              <li>Pivot Tables, calculated fields, and multi-dimensional slicers.</li>
-              <li>Statistical calculations (mean, median, standard deviation, trends).</li>
-              <li>Building interactive executive visual reports and charts.</li>
+        <div>
+          <div class="modal-cert-viewer">
+            <a href="assets/cert-excel.png" target="_blank" title="Click to view full image in high resolution">
+              <img src="assets/cert-excel.png" alt="Microsoft Business Analytics with Excel Certificate for Angela M. Oñate" class="modal-cert-img" loading="lazy">
+            </a>
+          </div>
+
+          <div class="modal-cert-actions">
+            <a href="assets/cert-excel.png" target="_blank" class="btn btn-primary btn-sm">
+              Open Full Resolution Image ↗
+            </a>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="navigator.clipboard.writeText('9431320'); showToast('Certificate Code 9431320 copied!');">
+              Copy Code: 9431320 📋
+            </button>
+          </div>
+
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Recipient</span>
+              <span class="modal-meta-value">Angela M. Oñate</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Completion Date</span>
+              <span class="modal-meta-value">19th November 2025</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Issuing Body</span>
+              <span class="modal-meta-value">Powered by Microsoft • Simplilearn SkillUp</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Certificate Code</span>
+              <span class="modal-meta-value"><code>9431320</code></span>
+            </div>
+            <div class="modal-meta-item" style="grid-column: 1 / -1;">
+              <span class="modal-meta-label">Authorized Signatory</span>
+              <span class="modal-meta-value">Krishna Kumar, CEO, Simplilearn</span>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-canvas-subtle); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.6rem;">Key Competencies Mastered</h4>
+            <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+              <li>Advanced Excel formulas, logical functions, and multi-variable sorting.</li>
+              <li>Pivot Tables, automated calculated fields, and interactive multi-slicers.</li>
+              <li>Descriptive statistical modeling, variance analysis, and trend forecasting.</li>
+              <li>Designing intuitive executive management reporting dashboards.</li>
             </ul>
           </div>
         </div>
       `
     },
+
     'databricks-sql': {
-      title: 'SQL Analytics and BI on Databricks',
+      title: 'Get Started with SQL Analytics and BI on Databricks',
       subtitle: 'Databricks / Simplilearn SkillUp Credential',
       tags: ['Databricks', 'SQL Analytics', 'Lakehouse', 'BI Dashboards'],
       content: `
-        <div style="text-align: center; margin-bottom: 1.5rem;">
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">⚡</div>
-          <span class="status-pill" style="margin: 0 auto 1rem;">Verified Professional Credential</span>
-          <p style="color: var(--text-secondary); line-height: 1.6; margin-top: 1rem;">
-            <strong>Issuing Organization:</strong> Databricks / Simplilearn SkillUp<br>
-            <strong>Completion Date:</strong> November 2025<br>
-            <strong>Core Topics Mastered:</strong>
-          </p>
-          <div style="text-align: left; background: var(--bg-canvas-subtle); padding: 1.2rem; border-radius: 12px; margin-top: 1rem;">
-            <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.6;">
-              <li>Writing robust SQL queries with joins, groupings, aggregations, and window functions.</li>
-              <li>Understanding Lakehouse architecture (Bronze/Silver/Gold data layers).</li>
-              <li>Creating automated Databricks SQL queries and visualization dashboards.</li>
-              <li>Data extraction, transformation, and business intelligence reporting.</li>
+        <div>
+          <div class="modal-cert-viewer">
+            <a href="assets/cert-databricks.png" target="_blank" title="Click to view full image in high resolution">
+              <img src="assets/cert-databricks.png" alt="Databricks SQL Analytics and BI Certificate for Angela M. Oñate" class="modal-cert-img" loading="lazy">
+            </a>
+          </div>
+
+          <div class="modal-cert-actions">
+            <a href="assets/cert-databricks.png" target="_blank" class="btn btn-primary btn-sm">
+              Open Full Resolution Image ↗
+            </a>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="navigator.clipboard.writeText('9434181'); showToast('Certificate Code 9434181 copied!');">
+              Copy Code: 9434181 📋
+            </button>
+          </div>
+
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Recipient</span>
+              <span class="modal-meta-value">Angela M. Oñate</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Completion Date</span>
+              <span class="modal-meta-value">20th November 2025</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Issuing Body</span>
+              <span class="modal-meta-value">Databricks • Simplilearn SkillUp</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Certificate Code</span>
+              <span class="modal-meta-value"><code>9434181</code></span>
+            </div>
+            <div class="modal-meta-item" style="grid-column: 1 / -1;">
+              <span class="modal-meta-label">Authorized Signatory</span>
+              <span class="modal-meta-value">Krishna Kumar, CEO, Simplilearn</span>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-canvas-subtle); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.6rem;">Key Competencies Mastered</h4>
+            <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+              <li>Writing robust SQL queries, analytical joins, and window aggregations.</li>
+              <li>Databricks Lakehouse architecture fundamentals and data pipeline ingestion.</li>
+              <li>Configuring interactive SQL endpoint query visualizations and charts.</li>
+              <li>Automating business intelligence workflows for organizational decision making.</li>
             </ul>
           </div>
         </div>
       `
     },
+
     'cisco-cyber': {
       title: 'Introduction to Cybersecurity',
       subtitle: 'Cisco Networking Academy / DICT-ITU DTC Credential',
       tags: ['Cybersecurity', 'Threat Analysis', 'Data Protection', 'Information Privacy'],
       content: `
-        <div style="text-align: center; margin-bottom: 1.5rem;">
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">🛡️</div>
-          <span class="status-pill" style="margin: 0 auto 1rem;">Verified Professional Credential</span>
-          <p style="color: var(--text-secondary); line-height: 1.6; margin-top: 1rem;">
-            <strong>Issuing Organization:</strong> Cisco Networking Academy &amp; DICT-ITU DTC Initiative<br>
-            <strong>Completion Date:</strong> November 2025<br>
-            <strong>Core Topics Mastered:</strong>
-          </p>
-          <div style="text-align: left; background: var(--bg-canvas-subtle); padding: 1.2rem; border-radius: 12px; margin-top: 1rem;">
-            <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.6;">
-              <li>Understanding cybersecurity threats, attack vectors, and malware classifications.</li>
-              <li>Protecting organizational assets, sensitive data, and personal privacy.</li>
-              <li>Implementing robust authentication, firewall concepts, and secure practices.</li>
-              <li>Adhering to data privacy regulations and security compliance frameworks.</li>
+        <div>
+          <div class="modal-cert-viewer">
+            <a href="assets/cert-cisco-cyber.png" target="_blank" title="Click to view full image in high resolution">
+              <img src="assets/cert-cisco-cyber.png" alt="Cisco Introduction to Cybersecurity Certificate for Angela Oñate" class="modal-cert-img" loading="lazy">
+            </a>
+          </div>
+
+          <div class="modal-cert-actions">
+            <a href="assets/cert-cisco-cyber.png" target="_blank" class="btn btn-primary btn-sm">
+              Open Full Resolution Image ↗
+            </a>
+            <a href="assets/cert-cisco-cyber.pdf" target="_blank" download class="btn btn-secondary btn-sm">
+              Download Official PDF 📄
+            </a>
+          </div>
+
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Recipient</span>
+              <span class="modal-meta-value">Angela Oñate</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Completion Date</span>
+              <span class="modal-meta-value">10 Nov 2025</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Issuing Body</span>
+              <span class="modal-meta-value">Cisco Networking Academy • DICT-ITU DTC</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Program Initiative</span>
+              <span class="modal-meta-value">DICT-ITU Digital Transformation Center</span>
+            </div>
+            <div class="modal-meta-item" style="grid-column: 1 / -1;">
+              <span class="modal-meta-label">Authorized Instructor</span>
+              <span class="modal-meta-value">Digital Transformation Center Instructor, DICT-ITU DTC Initiative</span>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-canvas-subtle); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.6rem;">Key Competencies Mastered</h4>
+            <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+              <li>Identifying cybersecurity threat vectors, malware variations, and social engineering.</li>
+              <li>Network defense methodologies, endpoint security, and encryption principles.</li>
+              <li>Implementing personal and enterprise confidentiality, integrity, and availability (CIA).</li>
+              <li>Compliance with information privacy regulations and legal data handling frameworks.</li>
             </ul>
           </div>
         </div>
       `
     },
+
     'cisco-ai': {
       title: 'Introduction to Modern AI',
       subtitle: 'Cisco Networking Academy / DICT-ITU DTC Credential',
       tags: ['Modern AI', 'Machine Learning', 'Generative AI', 'Computer Vision'],
       content: `
-        <div style="text-align: center; margin-bottom: 1.5rem;">
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">🤖</div>
-          <span class="status-pill" style="margin: 0 auto 1rem;">Verified Professional Credential</span>
-          <p style="color: var(--text-secondary); line-height: 1.6; margin-top: 1rem;">
-            <strong>Issuing Organization:</strong> Cisco Networking Academy &amp; DICT-ITU DTC Initiative<br>
-            <strong>Completion Date:</strong> November 2025<br>
-            <strong>Core Topics Mastered:</strong>
-          </p>
-          <div style="text-align: left; background: var(--bg-canvas-subtle); padding: 1.2rem; border-radius: 12px; margin-top: 1rem;">
-            <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.6;">
-              <li>Fundamentals of Artificial Intelligence, Machine Learning, and Deep Learning.</li>
-              <li>Computer Vision, Natural Language Processing, and Conversational Chatbots.</li>
-              <li>Generative AI capabilities, prompt engineering, and ethical AI stewardship.</li>
-              <li>Evaluating practical business use-cases for enterprise AI integration.</li>
+        <div>
+          <div class="modal-cert-viewer">
+            <a href="assets/cert-cisco-ai.png" target="_blank" title="Click to view full image in high resolution">
+              <img src="assets/cert-cisco-ai.png" alt="Cisco Introduction to Modern AI Certificate for Angela Oñate" class="modal-cert-img" loading="lazy">
+            </a>
+          </div>
+
+          <div class="modal-cert-actions">
+            <a href="assets/cert-cisco-ai.png" target="_blank" class="btn btn-primary btn-sm">
+              Open Full Resolution Image ↗
+            </a>
+            <a href="assets/cert-cisco-ai.pdf" target="_blank" download class="btn btn-secondary btn-sm">
+              Download Official PDF 📄
+            </a>
+          </div>
+
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Recipient</span>
+              <span class="modal-meta-value">Angela Oñate</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Completion Date</span>
+              <span class="modal-meta-value">09 Nov 2025</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Issuing Body</span>
+              <span class="modal-meta-value">Cisco Networking Academy • DICT-ITU DTC</span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-label">Program Initiative</span>
+              <span class="modal-meta-value">DICT-ITU Digital Transformation Center</span>
+            </div>
+            <div class="modal-meta-item" style="grid-column: 1 / -1;">
+              <span class="modal-meta-label">Authorized Instructor</span>
+              <span class="modal-meta-value">Digital Transformation Center Instructor, DICT-ITU DTC Initiative</span>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-canvas-subtle); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.6rem;">Key Competencies Mastered</h4>
+            <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+              <li>Core concepts of Artificial Intelligence, Machine Learning, and neural networks.</li>
+              <li>Natural Language Processing (NLP), Computer Vision, and conversational agents.</li>
+              <li>Generative AI architectures, prompt craft techniques, and ethical AI stewardship.</li>
+              <li>Assessing organizational applications and AI automation opportunities.</li>
             </ul>
           </div>
         </div>
@@ -387,6 +551,14 @@ document.addEventListener('DOMContentLoaded', () => {
     card.addEventListener('click', () => {
       const certKey = card.getAttribute('data-cert');
       openModal(certKey);
+    });
+
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const certKey = card.getAttribute('data-cert');
+        openModal(certKey);
+      }
     });
   });
 
@@ -423,6 +595,12 @@ document.addEventListener('DOMContentLoaded', () => {
       detailsModal.close();
       document.body.style.overflow = '';
     }
+  }
+
+  // Deep linking: auto-open modal if URL hash matches a key (e.g., certificates.html#ibm-ba)
+  const initialHash = window.location.hash.replace('#', '');
+  if (initialHash && modalData[initialHash]) {
+    setTimeout(() => openModal(initialHash), 150);
   }
 
   // ==========================================
