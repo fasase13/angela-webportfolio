@@ -3,22 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Angela M. Oñate | Information Systems &amp; UI/UX Portfolio</title>
+  <title>Home | Angela M. Oñate — Information Systems &amp; UI/UX Portfolio</title>
   <meta name="description" content="Portfolio of Angela M. Oñate — Aspiring Information Systems professional skilled in project documentation, research papers, and basic UI/UX design.">
   <meta name="author" content="Angela M. Oñate">
-  <meta property="og:title" content="Angela M. Oñate | Information Systems &amp; UI/UX Portfolio">
-  <meta property="og:description" content="Explore projects, skills, certifications, and curriculum vitae of Angela M. Oñate.">
-  <meta property="og:type" content="website">
+
+  <!-- Immediate Theme Initializer (Prevents Flash of Unstyled Theme) -->
+  <script>
+    (function() {
+      const t = localStorage.getItem('angela_portfolio_theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23D56989'/><text x='50' y='64' font-size='42' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>AO</text></svg>">
 
-  <!-- Core Stylesheet -->
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Ambient Backdrop Glows (Aligned with Palette) -->
+  <!-- Ambient Backdrop Glows -->
   <div class="ambient-glow" aria-hidden="true">
     <div class="glow-orb glow-1"></div>
     <div class="glow-orb glow-2"></div>
@@ -29,42 +35,27 @@
   <header class="site-header" id="site-header">
     <div class="nav-container">
       <nav class="nav-bar" aria-label="Main Navigation">
-        <!-- Brand Monogram -->
-        <a href="#home" class="brand-logo" id="brand-logo" aria-label="Angela Oñate Home">
+        <a href="index.html" class="brand-logo" id="brand-logo" aria-label="Angela Oñate Home">
           <div class="logo-avatar">AO</div>
           <span class="brand-name">Angela <span>Oñate</span></span>
         </a>
 
         <!-- Desktop Navigation Menu -->
         <ul class="nav-menu" id="nav-menu" role="menubar">
-          <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
-          <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
-          <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
-          <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
-          <li role="none"><a href="#certificates" class="nav-link" role="menuitem">Certificates</a></li>
-          <li role="none"><a href="#resume" class="nav-link" role="menuitem">Resume</a></li>
-          <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+          <li role="none"><a href="index.html" class="nav-link active" role="menuitem">Home</a></li>
+          <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="projects.html" class="nav-link" role="menuitem">Projects</a></li>
+          <li role="none"><a href="skills.html" class="nav-link" role="menuitem">Skills</a></li>
+          <li role="none"><a href="certificates.html" class="nav-link" role="menuitem">Certificates</a></li>
+          <li role="none"><a href="resume.html" class="nav-link" role="menuitem">Resume</a></li>
+          <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
         </ul>
 
-        <!-- Action Items (Theme Switcher + Mobile Toggle) -->
+        <!-- Action Tools -->
         <div class="header-actions">
           <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Switch between light and dark theme">
-            <!-- Sun Icon (for dark mode) -->
-            <svg class="theme-icon icon-sun" viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <!-- Moon Icon (for light mode) -->
-            <svg class="theme-icon icon-moon" viewBox="0 0 24 24">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
+            <svg class="theme-icon icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="theme-icon icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
           </button>
 
           <button class="mobile-nav-toggle" id="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -77,30 +68,30 @@
     </div>
   </header>
 
-  <!-- Mobile Navigation Drawer -->
+  <!-- Mobile Drawer -->
   <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
     <div class="mobile-drawer-content">
       <ul class="mobile-nav-links">
-        <li><a href="#home" class="mobile-nav-link active">Home</a></li>
-        <li><a href="#about" class="mobile-nav-link">About</a></li>
-        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
-        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
-        <li><a href="#certificates" class="mobile-nav-link">Certificates</a></li>
-        <li><a href="#resume" class="mobile-nav-link">Resume</a></li>
-        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+        <li><a href="skills.html" class="mobile-nav-link">Skills</a></li>
+        <li><a href="certificates.html" class="mobile-nav-link">Certificates</a></li>
+        <li><a href="resume.html" class="mobile-nav-link">Resume</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
       </ul>
       <div class="mobile-drawer-footer">
-        <a href="#contact" class="btn btn-primary" style="width: 100%;">Let's Connect</a>
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Connect</a>
       </div>
     </div>
   </div>
 
   <main>
-    <!-- ==================== HOME / HERO SECTION ==================== -->
+    <!-- Hero Section -->
     <section class="hero-section" id="home">
       <div class="container">
         <div class="hero-grid">
-          <!-- Left Content -->
+          <!-- Text Content -->
           <div class="hero-content">
             <div class="status-pill">
               <span class="pulse-dot"></span>
@@ -117,33 +108,32 @@
             </p>
 
             <p class="hero-description">
-              Skilled in project documentation, research papers, and basic UI/UX design in Figma &amp; Adobe XD. Experienced in turning complex operational requirements into intuitive digital workflows and user-friendly interfaces.
+              Skilled in project documentation, research papers, and user interface design in Figma &amp; Adobe XD. Experienced in translating complex business processes into intuitive digital systems and human-friendly workflows.
             </p>
 
             <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
-                <span>View Portfolio Projects</span>
+              <a href="projects.html" class="btn btn-primary" id="hero-cta-projects">
+                <span>Explore Projects</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
-              <a href="#resume" class="btn btn-secondary" id="hero-cta-resume">
-                <span>Curriculum Vitae</span>
+              <a href="about.html" class="btn btn-secondary">
+                <span>About Angela</span>
               </a>
-              <a href="#contact" class="btn btn-stem" id="hero-cta-contact">
-                <span>Contact Me</span>
+              <a href="resume.html" class="btn btn-stem">
+                <span>View Resume</span>
               </a>
             </div>
           </div>
 
-          <!-- Right Portrait Presentation -->
+          <!-- Hero Portrait -->
           <div class="hero-visual">
             <div class="portrait-wrapper" id="portrait-wrapper">
               <div class="portrait-card">
                 <div class="portrait-img-box">
-                  <img src="assets/angela-photo.png" alt="Angela M. Oñate - Professional Portrait" class="portrait-img" loading="eager" width="248" height="298">
+                  <img src="assets/angela-photo.png" alt="Angela M. Oñate - Professional Portrait" class="portrait-img" width="248" height="298">
                 </div>
               </div>
 
-              <!-- Floating Context Badges -->
               <div class="float-badge badge-top-left">
                 <div class="badge-icon icon-bg-orchid">🎓</div>
                 <div class="badge-text-group">
@@ -185,787 +175,103 @@
       </div>
     </section>
 
-    <!-- ==================== ABOUT SECTION ==================== -->
-    <section class="section" id="about">
+    <!-- Quick Navigation Highlights Banner -->
+    <section class="section" style="padding-top: 1rem;">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">About Angela</span>
-          <h2 class="section-title">Bridging Information Systems &amp; User Experience</h2>
+          <span class="section-tag">Explore Portfolio</span>
+          <h2 class="section-title">Discover Work &amp; Qualifications</h2>
           <p class="section-desc">
-            Combining academic rigor in Information Systems with hands-on municipal government experience in document coordination and system workflows.
+            Explore dedicated pages covering my background, case studies, technical competencies, verified certifications, curriculum vitae, and direct contact details.
           </p>
         </div>
 
         <div class="about-grid">
-          <!-- Story & Core Philosophy -->
+          <!-- Card 1 -->
           <article class="about-card">
             <div class="card-heading-group">
-              <div class="card-icon-box">💡</div>
-              <h3 class="card-title">Professional Background</h3>
-            </div>
-            <p class="about-text">
-              I am an Information Systems student at Carlos Hilado Memorial State University (CHMSU) with a focused passion for creating structured system documentation, conducting research, and designing functional, human-centered interfaces.
-            </p>
-            <p class="about-text">
-              During my on-the-job training at the Business Permits and Licensing Office (BPLO) in Talisay City Hall, I handled front-line document processing, data encoding, and office workflows. This gave me direct insight into how digital tools and clear system architecture can eliminate bottlenecks and empower people.
-            </p>
-
-            <div class="about-pillars">
-              <div class="pillar-box">
-                <div class="pillar-title">📑 Systems Analysis</div>
-                <div class="pillar-desc">Translating stakeholder needs into thorough requirements, flowcharts, and specifications.</div>
-              </div>
-              <div class="pillar-box">
-                <div class="pillar-title">🎨 UI/UX Design</div>
-                <div class="pillar-desc">Designing modern, clean wireframes and prototypes using Figma and Adobe XD.</div>
-              </div>
-              <div class="pillar-box">
-                <div class="pillar-title">📊 Business Analytics</div>
-                <div class="pillar-desc">Certified in Excel, SQL, and Databricks BI for data-backed decisions.</div>
-              </div>
-              <div class="pillar-box">
-                <div class="pillar-title">🤝 Project Coordination</div>
-                <div class="pillar-desc">Fostering collaboration, task milestones, and transparent team reporting.</div>
+              <div class="card-icon-box">👩‍💻</div>
+              <div>
+                <h3 class="card-title">Background &amp; Story</h3>
+                <span class="timeline-subtitle">Academic Journey &amp; OJT Experience</span>
               </div>
             </div>
+            <p class="about-text">
+              Learn how my time at Carlos Hilado Memorial State University and front-line document processing at Talisay City Hall shaped my human-centered systems philosophy.
+            </p>
+            <a href="about.html" class="btn btn-secondary" style="margin-top: 0.5rem;">Read Full Bio ➔</a>
           </article>
 
-          <!-- Education & Experience Timeline -->
+          <!-- Card 2 -->
           <article class="about-card">
             <div class="card-heading-group">
-              <div class="card-icon-box">🏛️</div>
-              <h3 class="card-title">Education &amp; Experience</h3>
-            </div>
-
-            <div class="timeline">
-              <!-- College -->
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-meta">
-                  <span class="timeline-year">2023 — 2027</span>
-                </div>
-                <h4 class="timeline-title">Bachelor of Science in Information Systems</h4>
-                <div class="timeline-subtitle">Carlos Hilado Memorial State University (CHMSU)</div>
-                <p class="timeline-desc">
-                  Focused on systems analysis, database management, enterprise architecture, and human-computer interaction.
-                </p>
-              </div>
-
-              <!-- Experience -->
-              <div class="timeline-item">
-                <div class="timeline-dot stem-dot"></div>
-                <div class="timeline-meta">
-                  <span class="timeline-year">OJT Experience</span>
-                </div>
-                <h4 class="timeline-title">On-the-Job Trainee (OJT)</h4>
-                <div class="timeline-subtitle">Business Permits and Licensing Office (BPLO) • Talisay City Hall</div>
-                <p class="timeline-desc">
-                  Assisted with official document handling, citizen records data encoding, and office process coordination across city departments.
-                </p>
-              </div>
-
-              <!-- Senior High -->
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-meta">
-                  <span class="timeline-year">2021 — 2023</span>
-                </div>
-                <h4 class="timeline-title">Senior High School (HUMSS Strand)</h4>
-                <div class="timeline-subtitle">Rafael B. Lacson Memorial High School</div>
-                <p class="timeline-desc">
-                  Humanities and Social Sciences. Developed strong competencies in academic research writing, public communication, and qualitative analysis.
-                </p>
-              </div>
-
-              <!-- Junior High & Elementary -->
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-meta">
-                  <span class="timeline-year">2012 — 2021</span>
-                </div>
-                <h4 class="timeline-title">Secondary &amp; Primary Foundations</h4>
-                <div class="timeline-subtitle">Rafael B. Lacson Memorial High School &amp; Talisay South Elementary</div>
-                <p class="timeline-desc">
-                  Junior High School (2017–2021) and Elementary Education (2012–2017) in Talisay City.
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== PROJECTS SECTION ==================== -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Portfolio Work</span>
-          <h2 class="section-title">Featured Projects &amp; Case Studies</h2>
-          <p class="section-desc">
-            Interactive prototypes, system flow designs, and data analytics models built to solve real operational problems.
-          </p>
-        </div>
-
-        <!-- Filter Bar -->
-        <div class="projects-filter-bar" role="tablist">
-          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works (4)</button>
-          <button class="filter-btn" data-filter="uiux" role="tab" aria-selected="false">UI/UX Prototypes</button>
-          <button class="filter-btn" data-filter="documentation" role="tab" aria-selected="false">Systems &amp; Documentation</button>
-          <button class="filter-btn" data-filter="analytics" role="tab" aria-selected="false">Data &amp; BI Analytics</button>
-        </div>
-
-        <!-- Projects Grid -->
-        <div class="projects-grid" id="projects-grid">
-          <!-- Project 1: BPLO Portal -->
-          <article class="project-card" data-category="uiux documentation">
-            <div class="project-preview">
-              <img src="assets/project-bplo.svg" alt="Talisay City BPLO Permitting Portal Interface" loading="lazy">
-              <span class="project-category-badge">UI/UX &amp; Government IS</span>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Talisay City BPLO Digital Permitting &amp; Tracking Portal</h3>
-              <p class="project-desc">
-                Derived directly from my OJT experience at Talisay City Hall. Designed a digitized permit application queue and verification dashboard to reduce counter delays and streamline regulatory compliance.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Figma Prototype</span>
-                <span class="project-tag">Workflow Modeling</span>
-                <span class="project-tag">BPLO Intake</span>
-                <span class="project-tag">Government IS</span>
-              </div>
-              <div class="project-footer">
-                <button class="project-link-btn" data-modal="bplo-details">
-                  <span>View Case Study</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2: CHMSU Advising Portal -->
-          <article class="project-card" data-category="uiux documentation">
-            <div class="project-preview">
-              <img src="assets/project-chmsu.svg" alt="CHMSU Academic Advising & Course Tracker" loading="lazy">
-              <span class="project-category-badge">Academic IS &amp; HCI</span>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">CHMSU Degree Progress &amp; Academic Advising Portal</h3>
-              <p class="project-desc">
-                A student-faculty portal prototype for Information Systems majors featuring visual prerequisite trees, semester load evaluations, and advisor approval checkpoints.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Adobe XD</span>
-                <span class="project-tag">Figma</span>
-                <span class="project-tag">Curriculum Matrix</span>
-                <span class="project-tag">Prerequisite Tree</span>
-              </div>
-              <div class="project-footer">
-                <button class="project-link-btn" data-modal="chmsu-details">
-                  <span>View Case Study</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3: Databricks BI Dashboard -->
-          <article class="project-card" data-category="analytics">
-            <div class="project-preview">
-              <img src="assets/project-databricks.svg" alt="Databricks Lakehouse SQL Analytics & Visual BI" loading="lazy">
-              <span class="project-category-badge">Cloud Data &amp; SQL</span>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Databricks SQL Analytics &amp; Visual BI Dashboard</h3>
-              <p class="project-desc">
-                Applying concepts from my Simplilearn / Databricks certification. Formulated multi-table SQL queries, star schemas, and visual KPI charts to evaluate regional revenue and margin performance.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Databricks SQL</span>
-                <span class="project-tag">Delta Lakehouse</span>
-                <span class="project-tag">BI Dashboards</span>
-                <span class="project-tag">Data Modeling</span>
-              </div>
-              <div class="project-footer">
-                <button class="project-link-btn" data-modal="databricks-details">
-                  <span>View Analytics Report</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4: Microsoft Excel Business Analytics -->
-          <article class="project-card" data-category="analytics documentation">
-            <div class="project-preview">
-              <img src="assets/project-excel.svg" alt="Microsoft Excel Business Analytics & Reporting Model" loading="lazy">
-              <span class="project-category-badge">Business Analytics</span>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Advanced Excel Business Analytics &amp; Pivot Model</h3>
-              <p class="project-desc">
-                Multi-worksheet analytical model certified under Microsoft / Simplilearn. Features dynamic slicers, nested XLOOKUP/VLOOKUP functions, statistical regression, and executive summaries.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Microsoft Excel</span>
-                <span class="project-tag">Pivot Tables</span>
-                <span class="project-tag">Sensitivity Analysis</span>
-                <span class="project-tag">Executive Reporting</span>
-              </div>
-              <div class="project-footer">
-                <button class="project-link-btn" data-modal="excel-details">
-                  <span>View Model Details</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== SKILLS SECTION ==================== -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Competencies</span>
-          <h2 class="section-title">Technical &amp; Interpersonal Skills</h2>
-          <p class="section-desc">
-            A comprehensive overview of competencies across system documentation, design tools, project management, and data analysis.
-          </p>
-        </div>
-
-        <!-- Live Search Input -->
-        <div class="skills-search-wrapper">
-          <span class="search-icon-pos" aria-hidden="true">🔍</span>
-          <input type="text" id="skills-search-input" class="skills-search-input" placeholder="Search skills (e.g. Figma, Documentation, SQL, Excel)..." aria-label="Search skills">
-        </div>
-
-        <div class="skills-grid" id="skills-grid">
-          <!-- Category 1: Documentation & Research -->
-          <article class="skill-category-card" data-skill-group="documentation">
-            <div class="skill-category-header">
-              <div class="card-icon-box">📄</div>
+              <div class="card-icon-box">🚀</div>
               <div>
-                <h3 class="card-title">Documentation &amp; Research</h3>
-                <span class="timeline-subtitle">Written clarity &amp; technical standards</span>
+                <h3 class="card-title">Featured Projects</h3>
+                <span class="timeline-subtitle">Prototypes, Portals &amp; Data Models</span>
               </div>
             </div>
-            <div class="skill-items-list">
-              <div class="skill-item" data-skill-name="Research Papers & Academic Inquiry">
-                <div class="skill-label-group">
-                  <span>Research Papers &amp; Academic Inquiry</span>
-                  <span class="skill-score">Advanced</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="System Documentation & SRS">
-                <div class="skill-label-group">
-                  <span>System Documentation &amp; SRS</span>
-                  <span class="skill-score">92%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="Executive Reports & Office Documentation">
-                <div class="skill-label-group">
-                  <span>Executive Reports &amp; Office Documentation</span>
-                  <span class="skill-score">88%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="Process Flowcharts & Workflow Mapping">
-                <div class="skill-label-group">
-                  <span>Process Flowcharts &amp; Workflow Mapping</span>
-                  <span class="skill-score">85%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
-              </div>
-            </div>
+            <p class="about-text">
+              View interactive case studies including the Talisay City BPLO Permitting Portal, CHMSU Advising System, Databricks SQL Dashboard, and Excel models.
+            </p>
+            <a href="projects.html" class="btn btn-secondary" style="margin-top: 0.5rem;">View All Projects ➔</a>
           </article>
 
-          <!-- Category 2: UI/UX & Design Tools -->
-          <article class="skill-category-card" data-skill-group="uiux">
-            <div class="skill-category-header">
-              <div class="card-icon-box">🎨</div>
+          <!-- Card 3 -->
+          <article class="about-card">
+            <div class="card-heading-group">
+              <div class="card-icon-box">⚡</div>
               <div>
-                <h3 class="card-title">UI/UX &amp; Design Tools</h3>
-                <span class="timeline-subtitle">Wireframing, prototyping &amp; visual design</span>
+                <h3 class="card-title">Technical Skills</h3>
+                <span class="timeline-subtitle">Figma, Adobe XD, SRS &amp; Analytics</span>
               </div>
             </div>
-            <div class="skill-items-list">
-              <div class="skill-item" data-skill-name="Figma (Wireframing & Prototyping)">
-                <div class="skill-label-group">
-                  <span>Figma (Wireframing &amp; Prototyping)</span>
-                  <span class="skill-score">88%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="Adobe XD (Layout & Interactions)">
-                <div class="skill-label-group">
-                  <span>Adobe XD (Layout &amp; Interactions)</span>
-                  <span class="skill-score">82%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 82%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="User-Centered Interface Design">
-                <div class="skill-label-group">
-                  <span>User-Centered Interface Design</span>
-                  <span class="skill-score">86%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 86%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="Design Systems & Color Harmony">
-                <div class="skill-label-group">
-                  <span>Design Systems &amp; Color Harmony</span>
-                  <span class="skill-score">84%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 84%;"></div></div>
-              </div>
-            </div>
+            <p class="about-text">
+              Explore my interactive competency matrix with live search across system documentation, wireframing, project coordination, SQL, and Excel.
+            </p>
+            <a href="skills.html" class="btn btn-secondary" style="margin-top: 0.5rem;">Explore Skills ➔</a>
           </article>
 
-          <!-- Category 3: Project Management -->
-          <article class="skill-category-card" data-skill-group="management">
-            <div class="skill-category-header">
-              <div class="card-icon-box">📋</div>
+          <!-- Card 4 -->
+          <article class="about-card">
+            <div class="card-heading-group">
+              <div class="card-icon-box">🏅</div>
               <div>
-                <h3 class="card-title">Project Management</h3>
-                <span class="timeline-subtitle">Planning, coordination &amp; collaboration</span>
+                <h3 class="card-title">Certifications &amp; CV</h3>
+                <span class="timeline-subtitle">IBM, Microsoft, Cisco &amp; Databricks</span>
               </div>
             </div>
-            <div class="skill-items-list">
-              <div class="skill-item" data-skill-name="Planning & Task Scheduling">
-                <div class="skill-label-group">
-                  <span>Planning &amp; Task Scheduling</span>
-                  <span class="skill-score">88%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="Task Coordination & Team Collaboration">
-                <div class="skill-label-group">
-                  <span>Task Coordination &amp; Team Collaboration</span>
-                  <span class="skill-score">94%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 94%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="Stakeholder Requirements Gathering">
-                <div class="skill-label-group">
-                  <span>Stakeholder Requirements Gathering</span>
-                  <span class="skill-score">86%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 86%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="Gap Analysis & Scope Definition">
-                <div class="skill-label-group">
-                  <span>Gap Analysis &amp; Scope Definition</span>
-                  <span class="skill-score">84%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 84%;"></div></div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Category 4: Analytics & Technical Tools -->
-          <article class="skill-category-card" data-skill-group="analytics">
-            <div class="skill-category-header">
-              <div class="card-icon-box">📊</div>
-              <div>
-                <h3 class="card-title">Data Analytics &amp; Technical Tools</h3>
-                <span class="timeline-subtitle">Business intelligence, SQL &amp; AI literacy</span>
-              </div>
-            </div>
-            <div class="skill-items-list">
-              <div class="skill-item" data-skill-name="Microsoft Excel (Pivots, Formulas, Dashboards)">
-                <div class="skill-label-group">
-                  <span>Microsoft Excel (Pivots, Formulas, Dashboards)</span>
-                  <span class="skill-score">90%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="SQL Queries & Database Management">
-                <div class="skill-label-group">
-                  <span>SQL Queries &amp; Database Management</span>
-                  <span class="skill-score">82%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 82%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="Databricks Lakehouse & BI Visualization">
-                <div class="skill-label-group">
-                  <span>Databricks Lakehouse &amp; BI Visualization</span>
-                  <span class="skill-score">80%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 80%;"></div></div>
-              </div>
-              <div class="skill-item" data-skill-name="Cybersecurity & Modern AI Principles">
-                <div class="skill-label-group">
-                  <span>Cybersecurity &amp; Modern AI Principles</span>
-                  <span class="skill-score">85%</span>
-                </div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
-              </div>
+            <p class="about-text">
+              Inspect verified credentials in Business Analysis, Cybersecurity, AI, and SQL, or view and print my clean curriculum vitae.
+            </p>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
+              <a href="certificates.html" class="btn btn-secondary">Certificates ➔</a>
+              <a href="resume.html" class="btn btn-primary">Resume ➔</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ==================== CERTIFICATES SECTION ==================== -->
-    <section class="section" id="certificates">
+    <!-- Bottom Connect Banner -->
+    <section class="section" style="padding-top: 1rem;">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Credentials</span>
-          <h2 class="section-title">Verified Certifications &amp; Courses</h2>
-          <p class="section-desc">
-            Professional certifications from leading organizations including IBM, Microsoft, Databricks, and Cisco Networking Academy.
+        <div class="about-card" style="text-align: center; padding: 3rem 2rem; background: linear-gradient(135deg, rgba(213, 105, 137, 0.12), rgba(194, 220, 128, 0.18)); border-color: var(--border-medium);">
+          <span class="section-tag" style="margin-bottom: 0.8rem;">Open for Opportunities</span>
+          <h2 style="font-size: 2rem; margin-bottom: 0.75rem;">Let's Build Clear, Intuitive Systems Together</h2>
+          <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 1.75rem; font-size: 1.05rem;">
+            Whether you are looking for an Information Systems intern, a UI/UX design collaborator, or technical documentation specialist, I'd love to connect.
           </p>
-        </div>
-
-        <div class="certs-grid">
-          <!-- Cert 1: IBM Coursera -->
-          <article class="cert-card" data-cert="ibm-ba">
-            <div>
-              <span class="cert-issuer-badge">IBM / Coursera</span>
-              <h3 class="cert-title">Introduction to Business Analysis</h3>
-              <div class="cert-org">Issued by IBM &amp; Coursera</div>
-              <p class="cert-desc">
-                Covers business analysis fundamentals, stakeholder requirements gathering, gap analysis, and process optimization.
-              </p>
-            </div>
-            <div class="cert-meta">
-              <span class="cert-date">Nov 2025</span>
-              <span class="cert-view-action">View Credential ➔</span>
-            </div>
-          </article>
-
-          <!-- Cert 2: Microsoft Excel -->
-          <article class="cert-card" data-cert="ms-excel">
-            <div>
-              <span class="cert-issuer-badge">Microsoft / Simplilearn</span>
-              <h3 class="cert-title">Business Analytics with Excel</h3>
-              <div class="cert-org">Microsoft • Simplilearn SkillUp</div>
-              <p class="cert-desc">
-                Covers Excel data analysis, pivot tables, statistical metrics, interactive dashboards, and visual executive reports.
-              </p>
-            </div>
-            <div class="cert-meta">
-              <span class="cert-date">Nov 2025</span>
-              <span class="cert-view-action">View Credential ➔</span>
-            </div>
-          </article>
-
-          <!-- Cert 3: Databricks -->
-          <article class="cert-card" data-cert="databricks-sql">
-            <div>
-              <span class="cert-issuer-badge">Databricks / Simplilearn</span>
-              <h3 class="cert-title">SQL Analytics and BI on Databricks</h3>
-              <div class="cert-org">Databricks • Simplilearn SkillUp</div>
-              <p class="cert-desc">
-                Covers SQL queries, dashboards, enterprise data analysis, and lakehouse business intelligence visualizations.
-              </p>
-            </div>
-            <div class="cert-meta">
-              <span class="cert-date">Nov 2025</span>
-              <span class="cert-view-action">View Credential ➔</span>
-            </div>
-          </article>
-
-          <!-- Cert 4: Cisco Cybersecurity -->
-          <article class="cert-card" data-cert="cisco-cyber">
-            <div>
-              <span class="cert-issuer-badge">Cisco / DICT-ITU</span>
-              <h3 class="cert-title">Introduction to Cybersecurity</h3>
-              <div class="cert-org">Cisco Networking Academy • DICT-ITU DTC</div>
-              <p class="cert-desc">
-                Covers cyber threats, system vulnerabilities, network attack prevention, data protection, and enterprise privacy.
-              </p>
-            </div>
-            <div class="cert-meta">
-              <span class="cert-date">Nov 2025</span>
-              <span class="cert-view-action">View Credential ➔</span>
-            </div>
-          </article>
-
-          <!-- Cert 5: Cisco AI -->
-          <article class="cert-card" data-cert="cisco-ai">
-            <div>
-              <span class="cert-issuer-badge">Cisco / DICT-ITU</span>
-              <h3 class="cert-title">Introduction to Modern AI</h3>
-              <div class="cert-org">Cisco Networking Academy • DICT-ITU DTC</div>
-              <p class="cert-desc">
-                Covers artificial intelligence fundamentals, machine learning, computer vision, conversational chatbots, and generative AI.
-              </p>
-            </div>
-            <div class="cert-meta">
-              <span class="cert-date">Nov 2025</span>
-              <span class="cert-view-action">View Credential ➔</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== RESUME SECTION ==================== -->
-    <section class="section" id="resume">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Curriculum Vitae</span>
-          <h2 class="section-title">Official Resume &amp; Academic Record</h2>
-          <p class="section-desc">
-            Complete curriculum vitae formatted for screen review, PDF export, and physical printing.
-          </p>
-        </div>
-
-        <div class="resume-action-bar">
-          <button class="btn btn-primary" id="btn-print-resume" type="button">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-            <span>Print / Save as PDF</span>
-          </button>
-          <button class="btn btn-secondary" id="btn-copy-resume-text" type="button">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            <span>Copy Text Summary</span>
-          </button>
-        </div>
-
-        <!-- Rendered Resume Paper Document -->
-        <article class="resume-paper" id="resume-document">
-          <header class="resume-header">
-            <div>
-              <h2 class="resume-name">ANGELA M. OÑATE</h2>
-              <div class="resume-role">Aspiring Information Systems Professional</div>
-              <div class="resume-contact-inline">
-                <span class="contact-pill">📞 (+63) 993 386-4528</span>
-                <span class="contact-pill">✉️ amonate.chmsu@gmail.com</span>
-                <span class="contact-pill">📍 Brgy. Zone 5, Talisay City, Negros Occidental 6115</span>
-              </div>
-              <p style="margin-top: 1rem; color: var(--text-secondary); line-height: 1.6;">
-                Aspiring Information Systems professional skilled in project documentation, research papers, and basic UI/UX design, with experience in creating clear documents and user-friendly interfaces.
-              </p>
-            </div>
-            <img src="assets/angela-photo.png" alt="Angela M. Oñate portrait photo" class="resume-photo-mini" width="105" height="125">
-          </header>
-
-          <!-- Education Block -->
-          <div class="resume-section-block">
-            <h3 class="resume-block-title">Education</h3>
-            
-            <div class="resume-entry">
-              <div class="entry-head">
-                <span class="entry-role">Carlos Hilado Memorial State University</span>
-                <span class="entry-date">2023 — 2027</span>
-              </div>
-              <div class="entry-org">Bachelor of Science in Information Systems</div>
-            </div>
-
-            <div class="resume-entry">
-              <div class="entry-head">
-                <span class="entry-role">Rafael B. Lacson Memorial High School</span>
-                <span class="entry-date">2021 — 2023</span>
-              </div>
-              <div class="entry-org">Senior High School • HUMSS (Humanities and Social Sciences)</div>
-            </div>
-
-            <div class="resume-entry">
-              <div class="entry-head">
-                <span class="entry-role">Rafael B. Lacson Memorial High School</span>
-                <span class="entry-date">2017 — 2021</span>
-              </div>
-              <div class="entry-org">Junior High School</div>
-            </div>
-
-            <div class="resume-entry">
-              <div class="entry-head">
-                <span class="entry-role">Talisay South Elementary School</span>
-                <span class="entry-date">2012 — 2017</span>
-              </div>
-              <div class="entry-org">Elementary Graduate</div>
-            </div>
-          </div>
-
-          <!-- Experience Block -->
-          <div class="resume-section-block">
-            <h3 class="resume-block-title">Experience</h3>
-            <div class="resume-entry">
-              <div class="entry-head">
-                <span class="entry-role">On-the-Job Trainee (OJT)</span>
-                <span class="entry-date">Talisay City Hall</span>
-              </div>
-              <div class="entry-org">Business Permits and Licensing Office (BPLO) • Talisay City, Negros Occidental</div>
-              <p class="entry-details">
-                Assisted with document handling, data encoding, citizen intake routing, and office-related tasks to optimize local government unit permit processing.
-              </p>
-            </div>
-          </div>
-
-          <!-- Skills Block -->
-          <div class="resume-section-block">
-            <h3 class="resume-block-title">Skills</h3>
-            <p class="entry-details" style="margin-bottom: 0.5rem;">
-              <strong>• Documentation:</strong> Research Papers, Reports, System Documentation, Process Flowcharts
-            </p>
-            <p class="entry-details" style="margin-bottom: 0.5rem;">
-              <strong>• Project Management:</strong> Planning, Task Coordination, Team Collaboration, Scope Analysis
-            </p>
-            <p class="entry-details" style="margin-bottom: 0.5rem;">
-              <strong>• UI/UX &amp; Design Tools:</strong> Adobe XD, Figma, Wireframing, Human-Computer Interaction
-            </p>
-            <p class="entry-details">
-              <strong>• Data Analytics &amp; Tools:</strong> Microsoft Excel (Pivots, Analytics), SQL, Databricks BI
-            </p>
-          </div>
-
-          <!-- Certificates Block -->
-          <div class="resume-section-block">
-            <h3 class="resume-block-title">Certificates</h3>
-            
-            <div class="resume-entry">
-              <div class="entry-head">
-                <span class="entry-role">Introduction to Business Analysis</span>
-                <span class="entry-date">Nov 2025</span>
-              </div>
-              <div class="entry-org">IBM / Coursera</div>
-              <p class="entry-details">Covers business analysis basics, requirements gathering, stakeholder engagement, and gap analysis.</p>
-            </div>
-
-            <div class="resume-entry">
-              <div class="entry-head">
-                <span class="entry-role">Business Analytics with Excel</span>
-                <span class="entry-date">Nov 2025</span>
-              </div>
-              <div class="entry-org">Microsoft / Simplilearn SkillUp</div>
-              <p class="entry-details">Covers Excel data analysis, pivot tables, statistics, dashboards, and visual reports.</p>
-            </div>
-
-            <div class="resume-entry">
-              <div class="entry-head">
-                <span class="entry-role">SQL Analytics and BI on Databricks</span>
-                <span class="entry-date">Nov 2025</span>
-              </div>
-              <div class="entry-org">Databricks / Simplilearn SkillUp</div>
-              <p class="entry-details">Covers SQL queries, dashboards, data analysis, and BI visualizations.</p>
-            </div>
-
-            <div class="resume-entry">
-              <div class="entry-head">
-                <span class="entry-role">Introduction to Cybersecurity</span>
-                <span class="entry-date">Nov 2025</span>
-              </div>
-              <div class="entry-org">Cisco Networking Academy / DICT-ITU DTC Initiative</div>
-              <p class="entry-details">Covers cyber threats, vulnerabilities, attacks, and data protection.</p>
-            </div>
-
-            <div class="resume-entry">
-              <div class="entry-head">
-                <span class="entry-role">Introduction to Modern AI</span>
-                <span class="entry-date">Nov 2025</span>
-              </div>
-              <div class="entry-org">Cisco Networking Academy / DICT-ITU DTC Initiative</div>
-              <p class="entry-details">Covers AI, machine learning, computer vision, chatbots, and generative AI.</p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ==================== CONTACT SECTION ==================== -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Get in Touch</span>
-          <h2 class="section-title">Let's Discuss Projects &amp; Opportunities</h2>
-          <p class="section-desc">
-            Open to internships, junior Information Systems roles, UI/UX design collaborations, and research projects.
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <!-- Direct Channels Card -->
-          <div class="contact-info-card">
-            <div>
-              <h3 class="contact-lead">Direct Contact Channels</h3>
-              <p class="contact-sub">
-                Feel free to reach out directly via email, phone, or connect on LinkedIn and GitHub.
-              </p>
-
-              <div class="contact-channels">
-                <!-- Email -->
-                <div class="channel-item">
-                  <div class="channel-icon">✉️</div>
-                  <div class="channel-details">
-                    <span class="channel-label">Email Address</span>
-                    <a href="mailto:amonate.chmsu@gmail.com" class="channel-value">amonate.chmsu@gmail.com</a>
-                  </div>
-                  <button class="copy-btn" data-copy="amonate.chmsu@gmail.com" title="Copy Email" aria-label="Copy email address">📋</button>
-                </div>
-
-                <!-- Phone -->
-                <div class="channel-item">
-                  <div class="channel-icon">📞</div>
-                  <div class="channel-details">
-                    <span class="channel-label">Phone &amp; Mobile</span>
-                    <a href="tel:+639933864528" class="channel-value">(+63) 993 386-4528</a>
-                  </div>
-                  <button class="copy-btn" data-copy="+639933864528" title="Copy Phone" aria-label="Copy phone number">📋</button>
-                </div>
-
-                <!-- Location -->
-                <div class="channel-item">
-                  <div class="channel-icon">📍</div>
-                  <div class="channel-details">
-                    <span class="channel-label">Location</span>
-                    <span class="channel-value">Brgy. Zone 5, Talisay City, Negros Occidental 6115</span>
-                  </div>
-                  <button class="copy-btn" data-copy="Brgy. Zone 5, Talisay City, Negros Occidental 6115" title="Copy Address" aria-label="Copy address">📋</button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Social Links -->
-            <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
-              <span class="channel-label">Connect Online:</span>
-              <div style="display: flex; gap: 0.8rem; margin-top: 0.75rem;">
-                <a href="https://github.com/fasase13/angela-webportfolio" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
-                  GitHub Repository ↗
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Interactive Message Form -->
-          <div class="contact-form-card">
-            <h3 class="contact-lead" style="margin-bottom: 1.5rem;">Send a Direct Message</h3>
-            
-            <form id="contact-form" class="contact-form" novalidate>
-              <div class="form-group">
-                <label for="contact-name" class="form-label">Your Name</label>
-                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Maria Santos" required>
-              </div>
-
-              <div class="form-group">
-                <label for="contact-email" class="form-label">Your Email Address</label>
-                <input type="email" id="contact-email" class="form-control" placeholder="e.g. maria@example.com" required>
-              </div>
-
-              <div class="form-group">
-                <label for="contact-subject" class="form-label">Subject / Purpose</label>
-                <input type="text" id="contact-subject" class="form-control" placeholder="e.g. Information Systems Internship Opportunity" required>
-              </div>
-
-              <div class="form-group">
-                <label for="contact-message" class="form-label">Message Details</label>
-                <textarea id="contact-message" class="form-control" placeholder="Share your message, project idea, or opportunity details..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary" id="btn-submit-contact" style="width: 100%;">
-                <span>Send Message to Angela</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-              </button>
-            </form>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            <a href="mailto:amonate.chmsu@gmail.com" class="btn btn-stem">Email: amonate.chmsu@gmail.com</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Site Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-brand">
@@ -977,8 +283,7 @@
         Designed with the Anthurium Palette:
       </div>
 
-      <!-- Color Swatches from User Image -->
-      <div class="footer-palette-swatches" title="Theme Color Palette: Sorbet Stem, Petal Glaze, Dusty Orchid, Powdered Lilac Grey">
+      <div class="footer-palette-swatches">
         <span class="swatch-dot" style="background: #C2DC80;" title="Sorbet Stem (#C2DC80)"></span>
         <span class="swatch-dot" style="background: #EA9CAF;" title="Petal Glaze (#EA9CAF)"></span>
         <span class="swatch-dot" style="background: #D56989;" title="Dusty Orchid (#D56989)"></span>
@@ -991,23 +296,12 @@
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
   <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
 
-  <!-- Toast Notification Stack -->
   <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
-  <!-- Interactive Project & Certificate Detail Modal -->
-  <dialog class="custom-modal" id="details-modal">
-    <div class="modal-content-box">
-      <button class="modal-close-btn" id="modal-close-btn" type="button" aria-label="Close dialog">✕</button>
-      <div id="modal-body"></div>
-    </div>
-  </dialog>
-
-  <!-- Core JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 /**
  * ANGELA M. OÑATE - WEB PORTFOLIO
- * Interactive JavaScript Engine
+ * Multi-Page Interactive JavaScript Engine
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,11 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggleBtn = document.getElementById('theme-toggle-btn');
   const htmlRoot = document.documentElement;
 
-  // Determine initial theme: localStorage > system preference > default light
+  // Sync theme from storage or system preference
   const storedTheme = localStorage.getItem('angela_portfolio_theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const initialTheme = storedTheme || (prefersDark ? 'dark' : 'light');
-
   setTheme(initialTheme);
 
   if (themeToggleBtn) {
@@ -32,69 +31,62 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 2. STICKY HEADER & ACTIVE NAV SPY
+  // 2. MULTI-PAGE ACTIVE NAV STATE & HEADER
   // ==========================================
   const siteHeader = document.getElementById('site-header');
   const navLinks = document.querySelectorAll('.nav-link');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-  const sections = document.querySelectorAll('section[id]');
   const backToTopBtn = document.getElementById('back-to-top');
 
+  // Determine current page filename
+  let currentFile = window.location.pathname.split('/').pop();
+  if (!currentFile || currentFile === '/' || currentFile === '') {
+    currentFile = 'index.html';
+  }
+
+  // Set active link based on current page URL
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href')?.split('#')[0] || '';
+    if (href === currentFile || (currentFile === 'index.html' && (href === '' || href === 'index.html'))) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  mobileNavLinks.forEach(link => {
+    const href = link.getAttribute('href')?.split('#')[0] || '';
+    if (href === currentFile || (currentFile === 'index.html' && (href === '' || href === 'index.html'))) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  // Sticky Header & Back-To-Top
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
 
-    // Header subtle elevation
-    if (scrollY > 30) {
-      siteHeader.classList.add('scrolled');
-    } else {
-      siteHeader.classList.remove('scrolled');
-    }
-
-    // Back to top button visibility
-    if (scrollY > 400) {
-      backToTopBtn.classList.add('visible');
-    } else {
-      backToTopBtn.classList.remove('visible');
-    }
-
-    // Scroll Spying for Active Section
-    let currentSectionId = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 140;
-      const sectionHeight = section.offsetHeight;
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        currentSectionId = section.getAttribute('id');
+    if (siteHeader) {
+      if (scrollY > 20) {
+        siteHeader.classList.add('scrolled');
+      } else {
+        siteHeader.classList.remove('scrolled');
       }
-    });
+    }
 
-    if (currentSectionId) {
-      updateActiveNav(currentSectionId);
+    if (backToTopBtn) {
+      if (scrollY > 350) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
     }
   }, { passive: true });
 
   if (backToTopBtn) {
     backToTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-
-  function updateActiveNav(activeId) {
-    navLinks.forEach(link => {
-      const href = link.getAttribute('href').replace('#', '');
-      if (href === activeId) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
-
-    mobileNavLinks.forEach(link => {
-      const href = link.getAttribute('href').replace('#', '');
-      if (href === activeId) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
     });
   }
 
@@ -114,14 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Close when clicking outside drawer content
     mobileNavDrawer.addEventListener('click', (e) => {
       if (e.target === mobileNavDrawer) {
         closeMobileDrawer();
       }
     });
 
-    // Close when clicking any mobile nav link
     mobileNavLinks.forEach(link => {
       link.addEventListener('click', () => {
         closeMobileDrawer();
@@ -144,41 +134,42 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 4. PROJECT CATEGORY FILTERING
+  // 4. PROJECT CATEGORY FILTERING (projects.html & index.html)
   // ==========================================
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
-      });
+  if (filterBtns.length > 0) {
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
 
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
 
-      const filterValue = btn.getAttribute('data-filter');
+        const filterValue = btn.getAttribute('data-filter');
 
-      projectCards.forEach(card => {
-        const categories = card.getAttribute('data-category') || '';
-        if (filterValue === 'all' || categories.includes(filterValue)) {
-          card.style.display = 'flex';
-          card.style.opacity = '1';
-          card.style.transform = 'scale(1)';
-        } else {
-          card.style.display = 'none';
-        }
+        projectCards.forEach(card => {
+          const categories = card.getAttribute('data-category') || '';
+          if (filterValue === 'all' || categories.includes(filterValue)) {
+            card.style.display = 'flex';
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+          } else {
+            card.style.display = 'none';
+          }
+        });
       });
     });
-  });
+  }
 
   // ==========================================
-  // 5. SKILLS LIVE SEARCH
+  // 5. SKILLS LIVE SEARCH (skills.html)
   // ==========================================
   const skillsSearchInput = document.getElementById('skills-search-input');
-  const skillItems = document.querySelectorAll('.skill-item');
   const skillCategoryCards = document.querySelectorAll('.skill-category-card');
 
   if (skillsSearchInput) {
@@ -215,7 +206,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalBody = document.getElementById('modal-body');
   const modalCloseBtn = document.getElementById('modal-close-btn');
 
-  // Modal data registry
   const modalData = {
     'bplo-details': {
       title: 'Talisay City BPLO Digital Permitting & Tracking Portal',
@@ -301,7 +291,6 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `
     },
-    // Certificate Modals
     'ibm-ba': {
       title: 'Introduction to Business Analysis',
       subtitle: 'IBM / Coursera Credential',
@@ -424,7 +413,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // Attach click listeners for project modals
   document.querySelectorAll('[data-modal]').forEach(trigger => {
     trigger.addEventListener('click', () => {
       const modalKey = trigger.getAttribute('data-modal');
@@ -432,7 +420,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Attach click listeners for certificate cards
   document.querySelectorAll('[data-cert]').forEach(card => {
     card.addEventListener('click', () => {
       const certKey = card.getAttribute('data-cert');
@@ -563,14 +550,12 @@ CERTIFICATES (Nov 2025):
         return;
       }
 
-      // Simple email check
       if (!emailInput.value.includes('@') || !emailInput.value.includes('.')) {
         showToast('Please provide a valid email address.');
         emailInput.focus();
         return;
       }
 
-      // Simulated sending state
       const originalBtnText = submitBtn.innerHTML;
       submitBtn.disabled = true;
       submitBtn.innerHTML = `<span>Sending Message...</span>`;
@@ -597,7 +582,6 @@ CERTIFICATES (Nov 2025):
 
     toastContainer.appendChild(toast);
 
-    // Trigger animation
     requestAnimationFrame(() => {
       toast.classList.add('show');
     });
@@ -611,7 +595,7 @@ CERTIFICATES (Nov 2025):
   }
 
   // ==========================================
-  // 11. PORTRAIT 3D TILT MICRO-INTERACTION
+  // 11. PORTRAIT 3D TILT MICRO-INTERACTION (index.html & about.html)
   // ==========================================
   const portraitWrapper = document.getElementById('portrait-wrapper');
   if (portraitWrapper && window.matchMedia('(pointer: fine)').matches) {

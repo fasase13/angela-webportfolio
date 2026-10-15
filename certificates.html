@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates | Angela M. Oñate — Information Systems &amp; UI/UX Portfolio</title>
+  <meta name="description" content="View verified certifications of Angela M. Oñate from IBM, Microsoft, Databricks, and Cisco Networking Academy.">
+  <meta name="author" content="Angela M. Oñate">
+
+  <!-- Immediate Theme Initializer -->
+  <script>
+    (function() {
+      const t = localStorage.getItem('angela_portfolio_theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23D56989'/><text x='50' y='64' font-size='42' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>AO</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Backdrop Glows -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-1"></div>
+    <div class="glow-orb glow-2"></div>
+    <div class="glow-orb glow-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <nav class="nav-bar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" id="brand-logo" aria-label="Angela Oñate Home">
+          <div class="logo-avatar">AO</div>
+          <span class="brand-name">Angela <span>Oñate</span></span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+          <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="projects.html" class="nav-link" role="menuitem">Projects</a></li>
+          <li role="none"><a href="skills.html" class="nav-link" role="menuitem">Skills</a></li>
+          <li role="none"><a href="certificates.html" class="nav-link active" role="menuitem">Certificates</a></li>
+          <li role="none"><a href="resume.html" class="nav-link" role="menuitem">Resume</a></li>
+          <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Switch between light and dark theme">
+            <svg class="theme-icon icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="theme-icon icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+        <li><a href="skills.html" class="mobile-nav-link">Skills</a></li>
+        <li><a href="certificates.html" class="mobile-nav-link active">Certificates</a></li>
+        <li><a href="resume.html" class="mobile-nav-link">Resume</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Connect</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-main">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h1 class="section-title">Verified Certifications &amp; Courses</h1>
+        <p class="section-desc">
+          Professional industry credentials completed across Business Analysis, Data Analytics, Cloud SQL, Cybersecurity, and Modern Artificial Intelligence.
+        </p>
+      </div>
+
+      <!-- Certs Grid -->
+      <div class="certs-grid">
+        <!-- Cert 1: IBM Coursera -->
+        <article class="cert-card" data-cert="ibm-ba">
+          <div>
+            <span class="cert-issuer-badge">IBM / Coursera</span>
+            <h2 class="cert-title">Introduction to Business Analysis</h2>
+            <div class="cert-org">Issued by IBM &amp; Coursera</div>
+            <p class="cert-desc">
+              Covers business analysis fundamentals, stakeholder requirements gathering, gap analysis, and process optimization.
+            </p>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-date">Nov 2025</span>
+            <span class="cert-view-action">View Credential ➔</span>
+          </div>
+        </article>
+
+        <!-- Cert 2: Microsoft Excel -->
+        <article class="cert-card" data-cert="ms-excel">
+          <div>
+            <span class="cert-issuer-badge">Microsoft / Simplilearn</span>
+            <h2 class="cert-title">Business Analytics with Excel</h2>
+            <div class="cert-org">Microsoft • Simplilearn SkillUp</div>
+            <p class="cert-desc">
+              Covers Excel data analysis, pivot tables, statistical metrics, interactive dashboards, and visual executive reports.
+            </p>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-date">Nov 2025</span>
+            <span class="cert-view-action">View Credential ➔</span>
+          </div>
+        </article>
+
+        <!-- Cert 3: Databricks -->
+        <article class="cert-card" data-cert="databricks-sql">
+          <div>
+            <span class="cert-issuer-badge">Databricks / Simplilearn</span>
+            <h2 class="cert-title">SQL Analytics and BI on Databricks</h2>
+            <div class="cert-org">Databricks • Simplilearn SkillUp</div>
+            <p class="cert-desc">
+              Covers SQL queries, dashboards, enterprise data analysis, and lakehouse business intelligence visualizations.
+            </p>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-date">Nov 2025</span>
+            <span class="cert-view-action">View Credential ➔</span>
+          </div>
+        </article>
+
+        <!-- Cert 4: Cisco Cybersecurity -->
+        <article class="cert-card" data-cert="cisco-cyber">
+          <div>
+            <span class="cert-issuer-badge">Cisco / DICT-ITU</span>
+            <h2 class="cert-title">Introduction to Cybersecurity</h2>
+            <div class="cert-org">Cisco Networking Academy • DICT-ITU DTC</div>
+            <p class="cert-desc">
+              Covers cyber threats, system vulnerabilities, network attack prevention, data protection, and enterprise privacy.
+            </p>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-date">Nov 2025</span>
+            <span class="cert-view-action">View Credential ➔</span>
+          </div>
+        </article>
+
+        <!-- Cert 5: Cisco AI -->
+        <article class="cert-card" data-cert="cisco-ai">
+          <div>
+            <span class="cert-issuer-badge">Cisco / DICT-ITU</span>
+            <h2 class="cert-title">Introduction to Modern AI</h2>
+            <div class="cert-org">Cisco Networking Academy • DICT-ITU DTC</div>
+            <p class="cert-desc">
+              Covers artificial intelligence fundamentals, machine learning, computer vision, conversational chatbots, and generative AI.
+            </p>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-date">Nov 2025</span>
+            <span class="cert-view-action">View Credential ➔</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Credential Verification Guarantee Card -->
+      <div class="about-card" style="margin-top: 3.5rem; background: var(--bg-canvas-subtle); padding: 2.2rem; border-radius: var(--radius-lg); text-align: center;">
+        <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Continuous Learning &amp; Professional Commitment</h3>
+        <p style="color: var(--text-secondary); max-width: 620px; margin: 0 auto 1.5rem; font-size: 0.95rem;">
+          These credentials reflect proactive skill building outside of university requirements, ensuring hands-on competency with industry-standard platforms.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="resume.html" class="btn btn-primary">View in Resume</a>
+          <a href="contact.html" class="btn btn-secondary">Request Credential IDs</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Interactive Modal Dialog -->
+  <dialog class="custom-modal" id="details-modal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" id="modal-close-btn" type="button" aria-label="Close dialog">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </dialog>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo-avatar" style="width: 28px; height: 28px; font-size: 0.72rem;">AO</div>
+        <span>Angela M. Oñate</span>
+      </div>
+
+      <div class="footer-text">
+        Designed with the Anthurium Palette:
+      </div>
+
+      <div class="footer-palette-swatches">
+        <span class="swatch-dot" style="background: #C2DC80;" title="Sorbet Stem (#C2DC80)"></span>
+        <span class="swatch-dot" style="background: #EA9CAF;" title="Petal Glaze (#EA9CAF)"></span>
+        <span class="swatch-dot" style="background: #D56989;" title="Dusty Orchid (#D56989)"></span>
+        <span class="swatch-dot" style="background: #F3EEF1;" title="Powdered Lilac Grey (#F3EEF1)"></span>
+      </div>
+
+      <div class="footer-text">
+        © 2026 Angela M. Oñate. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Angela M. Oñate — Information Systems &amp; UI/UX Portfolio</title>
+  <meta name="description" content="Explore project prototypes, system designs, and data models by Angela M. Oñate, including the Talisay City BPLO Portal and CHMSU Advising System.">
+  <meta name="author" content="Angela M. Oñate">
+
+  <!-- Immediate Theme Initializer -->
+  <script>
+    (function() {
+      const t = localStorage.getItem('angela_portfolio_theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23D56989'/><text x='50' y='64' font-size='42' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>AO</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Backdrop Glows -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-1"></div>
+    <div class="glow-orb glow-2"></div>
+    <div class="glow-orb glow-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <nav class="nav-bar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" id="brand-logo" aria-label="Angela Oñate Home">
+          <div class="logo-avatar">AO</div>
+          <span class="brand-name">Angela <span>Oñate</span></span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+          <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="projects.html" class="nav-link active" role="menuitem">Projects</a></li>
+          <li role="none"><a href="skills.html" class="nav-link" role="menuitem">Skills</a></li>
+          <li role="none"><a href="certificates.html" class="nav-link" role="menuitem">Certificates</a></li>
+          <li role="none"><a href="resume.html" class="nav-link" role="menuitem">Resume</a></li>
+          <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Switch between light and dark theme">
+            <svg class="theme-icon icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="theme-icon icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="projects.html" class="mobile-nav-link active">Projects</a></li>
+        <li><a href="skills.html" class="mobile-nav-link">Skills</a></li>
+        <li><a href="certificates.html" class="mobile-nav-link">Certificates</a></li>
+        <li><a href="resume.html" class="mobile-nav-link">Resume</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Connect</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-main">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="section-tag">Portfolio Work</span>
+        <h1 class="section-title">Projects &amp; Case Studies</h1>
+        <p class="section-desc">
+          Interactive prototypes, government system workflows, and data analytics models solving real operational bottlenecks.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="projects-filter-bar" role="tablist">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works (4)</button>
+        <button class="filter-btn" data-filter="uiux" role="tab" aria-selected="false">UI/UX Prototypes</button>
+        <button class="filter-btn" data-filter="documentation" role="tab" aria-selected="false">Systems &amp; Documentation</button>
+        <button class="filter-btn" data-filter="analytics" role="tab" aria-selected="false">Data &amp; BI Analytics</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project 1: BPLO Portal -->
+        <article class="project-card" data-category="uiux documentation">
+          <div class="project-preview">
+            <img src="assets/project-bplo.svg" alt="Talisay City BPLO Permitting Portal Interface" loading="lazy">
+            <span class="project-category-badge">UI/UX &amp; Government IS</span>
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">Talisay City BPLO Digital Permitting &amp; Tracking Portal</h2>
+            <p class="project-desc">
+              Derived directly from my OJT experience at Talisay City Hall. Designed a digitized permit application queue and verification dashboard to reduce counter delays and streamline regulatory compliance.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Figma Prototype</span>
+              <span class="project-tag">Workflow Modeling</span>
+              <span class="project-tag">BPLO Intake</span>
+              <span class="project-tag">Government IS</span>
+            </div>
+            <div class="project-footer">
+              <button class="project-link-btn" data-modal="bplo-details">
+                <span>View Case Study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: CHMSU Advising Portal -->
+        <article class="project-card" data-category="uiux documentation">
+          <div class="project-preview">
+            <img src="assets/project-chmsu.svg" alt="CHMSU Academic Advising & Course Tracker" loading="lazy">
+            <span class="project-category-badge">Academic IS &amp; HCI</span>
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">CHMSU Degree Progress &amp; Academic Advising Portal</h2>
+            <p class="project-desc">
+              A student-faculty portal prototype for Information Systems majors featuring visual prerequisite trees, semester load evaluations, and advisor approval checkpoints.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Adobe XD</span>
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">Curriculum Matrix</span>
+              <span class="project-tag">Prerequisite Tree</span>
+            </div>
+            <div class="project-footer">
+              <button class="project-link-btn" data-modal="chmsu-details">
+                <span>View Case Study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Databricks BI Dashboard -->
+        <article class="project-card" data-category="analytics">
+          <div class="project-preview">
+            <img src="assets/project-databricks.svg" alt="Databricks Lakehouse SQL Analytics & Visual BI" loading="lazy">
+            <span class="project-category-badge">Cloud Data &amp; SQL</span>
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">Databricks SQL Analytics &amp; Visual BI Dashboard</h2>
+            <p class="project-desc">
+              Applying concepts from my Simplilearn / Databricks certification. Formulated multi-table SQL queries, star schemas, and visual KPI charts to evaluate regional revenue and margin performance.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Databricks SQL</span>
+              <span class="project-tag">Delta Lakehouse</span>
+              <span class="project-tag">BI Dashboards</span>
+              <span class="project-tag">Data Modeling</span>
+            </div>
+            <div class="project-footer">
+              <button class="project-link-btn" data-modal="databricks-details">
+                <span>View Analytics Report</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Microsoft Excel Business Analytics -->
+        <article class="project-card" data-category="analytics documentation">
+          <div class="project-preview">
+            <img src="assets/project-excel.svg" alt="Microsoft Excel Business Analytics & Reporting Model" loading="lazy">
+            <span class="project-category-badge">Business Analytics</span>
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">Advanced Excel Business Analytics &amp; Pivot Model</h2>
+            <p class="project-desc">
+              Multi-worksheet analytical model certified under Microsoft / Simplilearn. Features dynamic slicers, nested XLOOKUP/VLOOKUP functions, statistical regression, and executive summaries.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Microsoft Excel</span>
+              <span class="project-tag">Pivot Tables</span>
+              <span class="project-tag">Sensitivity Analysis</span>
+              <span class="project-tag">Executive Reporting</span>
+            </div>
+            <div class="project-footer">
+              <button class="project-link-btn" data-modal="excel-details">
+                <span>View Model Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Interactive Modal Dialog -->
+  <dialog class="custom-modal" id="details-modal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" id="modal-close-btn" type="button" aria-label="Close dialog">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </dialog>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo-avatar" style="width: 28px; height: 28px; font-size: 0.72rem;">AO</div>
+        <span>Angela M. Oñate</span>
+      </div>
+
+      <div class="footer-text">
+        Designed with the Anthurium Palette:
+      </div>
+
+      <div class="footer-palette-swatches">
+        <span class="swatch-dot" style="background: #C2DC80;" title="Sorbet Stem (#C2DC80)"></span>
+        <span class="swatch-dot" style="background: #EA9CAF;" title="Petal Glaze (#EA9CAF)"></span>
+        <span class="swatch-dot" style="background: #D56989;" title="Dusty Orchid (#D56989)"></span>
+        <span class="swatch-dot" style="background: #F3EEF1;" title="Powdered Lilac Grey (#F3EEF1)"></span>
+      </div>
+
+      <div class="footer-text">
+        © 2026 Angela M. Oñate. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

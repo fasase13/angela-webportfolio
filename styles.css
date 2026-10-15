@@ -805,6 +805,12 @@ button, input, textarea, select {
   color: var(--text-secondary);
 }
 
+.page-main {
+  padding-top: 7.2rem;
+  padding-bottom: 4rem;
+  min-height: calc(100vh - 180px);
+}
+
 /* --- SECTION HEADERS --- */
 .section {
   padding: 5.5rem 0;

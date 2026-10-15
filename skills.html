@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Angela M. Oñate — Information Systems &amp; UI/UX Portfolio</title>
+  <meta name="description" content="Explore technical and interpersonal competencies of Angela M. Oñate: Documentation, Figma, Adobe XD, Project Coordination, SQL, and Excel Analytics.">
+  <meta name="author" content="Angela M. Oñate">
+
+  <!-- Immediate Theme Initializer -->
+  <script>
+    (function() {
+      const t = localStorage.getItem('angela_portfolio_theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23D56989'/><text x='50' y='64' font-size='42' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>AO</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Backdrop Glows -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-1"></div>
+    <div class="glow-orb glow-2"></div>
+    <div class="glow-orb glow-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <nav class="nav-bar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" id="brand-logo" aria-label="Angela Oñate Home">
+          <div class="logo-avatar">AO</div>
+          <span class="brand-name">Angela <span>Oñate</span></span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+          <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="projects.html" class="nav-link" role="menuitem">Projects</a></li>
+          <li role="none"><a href="skills.html" class="nav-link active" role="menuitem">Skills</a></li>
+          <li role="none"><a href="certificates.html" class="nav-link" role="menuitem">Certificates</a></li>
+          <li role="none"><a href="resume.html" class="nav-link" role="menuitem">Resume</a></li>
+          <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Switch between light and dark theme">
+            <svg class="theme-icon icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="theme-icon icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+        <li><a href="skills.html" class="mobile-nav-link active">Skills</a></li>
+        <li><a href="certificates.html" class="mobile-nav-link">Certificates</a></li>
+        <li><a href="resume.html" class="mobile-nav-link">Resume</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Connect</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-main">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="section-tag">Competencies</span>
+        <h1 class="section-title">Technical &amp; Professional Skills</h1>
+        <p class="section-desc">
+          Structured competencies across documentation standards, user interface design, project collaboration, and analytical intelligence.
+        </p>
+      </div>
+
+      <!-- Live Search Bar -->
+      <div class="skills-search-wrapper">
+        <span class="search-icon-pos" aria-hidden="true">🔍</span>
+        <input type="text" id="skills-search-input" class="skills-search-input" placeholder="Search skills (e.g. Figma, Documentation, SQL, Excel)..." aria-label="Search skills">
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- Category 1: Documentation & Research -->
+        <article class="skill-category-card" data-skill-group="documentation">
+          <div class="skill-category-header">
+            <div class="card-icon-box">📄</div>
+            <div>
+              <h2 class="card-title">Documentation &amp; Research</h2>
+              <span class="timeline-subtitle">Written clarity &amp; technical standards</span>
+            </div>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item" data-skill-name="Research Papers & Academic Inquiry">
+              <div class="skill-label-group">
+                <span>Research Papers &amp; Academic Inquiry</span>
+                <span class="skill-score">Advanced</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="System Documentation & SRS">
+              <div class="skill-label-group">
+                <span>System Documentation &amp; SRS</span>
+                <span class="skill-score">92%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="Executive Reports & Office Documentation">
+              <div class="skill-label-group">
+                <span>Executive Reports &amp; Office Documentation</span>
+                <span class="skill-score">88%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="Process Flowcharts & Workflow Mapping">
+              <div class="skill-label-group">
+                <span>Process Flowcharts &amp; Workflow Mapping</span>
+                <span class="skill-score">85%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Category 2: UI/UX & Design Tools -->
+        <article class="skill-category-card" data-skill-group="uiux">
+          <div class="skill-category-header">
+            <div class="card-icon-box">🎨</div>
+            <div>
+              <h2 class="card-title">UI/UX &amp; Design Tools</h2>
+              <span class="timeline-subtitle">Wireframing, prototyping &amp; visual design</span>
+            </div>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item" data-skill-name="Figma (Wireframing & Prototyping)">
+              <div class="skill-label-group">
+                <span>Figma (Wireframing &amp; Prototyping)</span>
+                <span class="skill-score">88%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="Adobe XD (Layout & Interactions)">
+              <div class="skill-label-group">
+                <span>Adobe XD (Layout &amp; Interactions)</span>
+                <span class="skill-score">82%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="User-Centered Interface Design">
+              <div class="skill-label-group">
+                <span>User-Centered Interface Design</span>
+                <span class="skill-score">86%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="Design Systems & Color Harmony">
+              <div class="skill-label-group">
+                <span>Design Systems &amp; Color Harmony</span>
+                <span class="skill-score">84%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 84%;"></div></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Category 3: Project Management -->
+        <article class="skill-category-card" data-skill-group="management">
+          <div class="skill-category-header">
+            <div class="card-icon-box">📋</div>
+            <div>
+              <h2 class="card-title">Project Management</h2>
+              <span class="timeline-subtitle">Planning, coordination &amp; collaboration</span>
+            </div>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item" data-skill-name="Planning & Task Scheduling">
+              <div class="skill-label-group">
+                <span>Planning &amp; Task Scheduling</span>
+                <span class="skill-score">88%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="Task Coordination & Team Collaboration">
+              <div class="skill-label-group">
+                <span>Task Coordination &amp; Team Collaboration</span>
+                <span class="skill-score">94%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="Stakeholder Requirements Gathering">
+              <div class="skill-label-group">
+                <span>Stakeholder Requirements Gathering</span>
+                <span class="skill-score">86%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="Gap Analysis & Scope Definition">
+              <div class="skill-label-group">
+                <span>Gap Analysis &amp; Scope Definition</span>
+                <span class="skill-score">84%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 84%;"></div></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Category 4: Analytics & Technical Tools -->
+        <article class="skill-category-card" data-skill-group="analytics">
+          <div class="skill-category-header">
+            <div class="card-icon-box">📊</div>
+            <div>
+              <h2 class="card-title">Data Analytics &amp; Technical Tools</h2>
+              <span class="timeline-subtitle">Business intelligence, SQL &amp; AI literacy</span>
+            </div>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item" data-skill-name="Microsoft Excel (Pivots, Formulas, Dashboards)">
+              <div class="skill-label-group">
+                <span>Microsoft Excel (Pivots, Formulas, Dashboards)</span>
+                <span class="skill-score">90%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="SQL Queries & Database Management">
+              <div class="skill-label-group">
+                <span>SQL Queries &amp; Database Management</span>
+                <span class="skill-score">82%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="Databricks Lakehouse & BI Visualization">
+              <div class="skill-label-group">
+                <span>Databricks Lakehouse &amp; BI Visualization</span>
+                <span class="skill-score">80%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-item" data-skill-name="Cybersecurity & Modern AI Principles">
+              <div class="skill-label-group">
+                <span>Cybersecurity &amp; Modern AI Principles</span>
+                <span class="skill-score">85%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Action Card -->
+      <div class="about-card" style="margin-top: 3.5rem; text-align: center; background: var(--bg-canvas-subtle); padding: 2.5rem 1.5rem;">
+        <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">See Skills Applied in Real Projects</h3>
+        <p style="color: var(--text-secondary); max-width: 550px; margin: 0 auto 1.5rem;">
+          View how these skills translate into operational prototypes, case studies, and business intelligence models.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+          <a href="certificates.html" class="btn btn-secondary">Verified Credentials</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo-avatar" style="width: 28px; height: 28px; font-size: 0.72rem;">AO</div>
+        <span>Angela M. Oñate</span>
+      </div>
+
+      <div class="footer-text">
+        Designed with the Anthurium Palette:
+      </div>
+
+      <div class="footer-palette-swatches">
+        <span class="swatch-dot" style="background: #C2DC80;" title="Sorbet Stem (#C2DC80)"></span>
+        <span class="swatch-dot" style="background: #EA9CAF;" title="Petal Glaze (#EA9CAF)"></span>
+        <span class="swatch-dot" style="background: #D56989;" title="Dusty Orchid (#D56989)"></span>
+        <span class="swatch-dot" style="background: #F3EEF1;" title="Powdered Lilac Grey (#F3EEF1)"></span>
+      </div>
+
+      <div class="footer-text">
+        © 2026 Angela M. Oñate. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

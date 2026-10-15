@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Angela M. Oñate — Information Systems &amp; UI/UX Portfolio</title>
+  <meta name="description" content="Official Curriculum Vitae of Angela M. Oñate — Education at CHMSU, OJT at Talisay City Hall, technical competencies, and professional certifications.">
+  <meta name="author" content="Angela M. Oñate">
+
+  <!-- Immediate Theme Initializer -->
+  <script>
+    (function() {
+      const t = localStorage.getItem('angela_portfolio_theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23D56989'/><text x='50' y='64' font-size='42' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>AO</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Backdrop Glows -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-1"></div>
+    <div class="glow-orb glow-2"></div>
+    <div class="glow-orb glow-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <nav class="nav-bar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" id="brand-logo" aria-label="Angela Oñate Home">
+          <div class="logo-avatar">AO</div>
+          <span class="brand-name">Angela <span>Oñate</span></span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+          <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="projects.html" class="nav-link" role="menuitem">Projects</a></li>
+          <li role="none"><a href="skills.html" class="nav-link" role="menuitem">Skills</a></li>
+          <li role="none"><a href="certificates.html" class="nav-link" role="menuitem">Certificates</a></li>
+          <li role="none"><a href="resume.html" class="nav-link active" role="menuitem">Resume</a></li>
+          <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Switch between light and dark theme">
+            <svg class="theme-icon icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="theme-icon icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+        <li><a href="skills.html" class="mobile-nav-link">Skills</a></li>
+        <li><a href="certificates.html" class="mobile-nav-link">Certificates</a></li>
+        <li><a href="resume.html" class="mobile-nav-link active">Resume</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Connect</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-main">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="section-tag">Curriculum Vitae</span>
+        <h1 class="section-title">Official Resume &amp; Academic Record</h1>
+        <p class="section-desc">
+          Clean, printable curriculum vitae formatted for screen review, instant PDF export, or physical printouts.
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="resume-action-bar">
+        <button class="btn btn-primary" id="btn-print-resume" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          <span>Print / Save as PDF</span>
+        </button>
+        <button class="btn btn-secondary" id="btn-copy-resume-text" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <span>Copy Text Summary</span>
+        </button>
+      </div>
+
+      <!-- Resume Paper Layout -->
+      <article class="resume-paper" id="resume-document">
+        <header class="resume-header">
+          <div>
+            <h2 class="resume-name">ANGELA M. OÑATE</h2>
+            <div class="resume-role">Aspiring Information Systems Professional</div>
+            <div class="resume-contact-inline">
+              <span class="contact-pill">📞 (+63) 993 386-4528</span>
+              <span class="contact-pill">✉️ amonate.chmsu@gmail.com</span>
+              <span class="contact-pill">📍 Brgy. Zone 5, Talisay City, Negros Occidental 6115</span>
+            </div>
+            <p style="margin-top: 1rem; color: var(--text-secondary); line-height: 1.6;">
+              Aspiring Information Systems professional skilled in project documentation, research papers, and basic UI/UX design, with experience in creating clear documents and user-friendly interfaces.
+            </p>
+          </div>
+          <img src="assets/angela-photo.png" alt="Angela M. Oñate portrait photo" class="resume-photo-mini" width="105" height="125">
+        </header>
+
+        <!-- Education Block -->
+        <div class="resume-section-block">
+          <h3 class="resume-block-title">Education</h3>
+          
+          <div class="resume-entry">
+            <div class="entry-head">
+              <span class="entry-role">Carlos Hilado Memorial State University</span>
+              <span class="entry-date">2023 — 2027</span>
+            </div>
+            <div class="entry-org">Bachelor of Science in Information Systems</div>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-head">
+              <span class="entry-role">Rafael B. Lacson Memorial High School</span>
+              <span class="entry-date">2021 — 2023</span>
+            </div>
+            <div class="entry-org">Senior High School • HUMSS (Humanities and Social Sciences)</div>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-head">
+              <span class="entry-role">Rafael B. Lacson Memorial High School</span>
+              <span class="entry-date">2017 — 2021</span>
+            </div>
+            <div class="entry-org">Junior High School</div>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-head">
+              <span class="entry-role">Talisay South Elementary School</span>
+              <span class="entry-date">2012 — 2017</span>
+            </div>
+            <div class="entry-org">Elementary Graduate</div>
+          </div>
+        </div>
+
+        <!-- Experience Block -->
+        <div class="resume-section-block">
+          <h3 class="resume-block-title">Experience</h3>
+          <div class="resume-entry">
+            <div class="entry-head">
+              <span class="entry-role">On-the-Job Trainee (OJT)</span>
+              <span class="entry-date">Talisay City Hall</span>
+            </div>
+            <div class="entry-org">Business Permits and Licensing Office (BPLO) • Talisay City, Negros Occidental</div>
+            <p class="entry-details">
+              Assisted with document handling, data encoding, citizen intake routing, and office-related tasks to optimize local government unit permit processing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills Block -->
+        <div class="resume-section-block">
+          <h3 class="resume-block-title">Skills</h3>
+          <p class="entry-details" style="margin-bottom: 0.5rem;">
+            <strong>• Documentation:</strong> Research Papers, Reports, System Documentation, Process Flowcharts
+          </p>
+          <p class="entry-details" style="margin-bottom: 0.5rem;">
+            <strong>• Project Management:</strong> Planning, Task Coordination, Team Collaboration, Scope Analysis
+          </p>
+          <p class="entry-details" style="margin-bottom: 0.5rem;">
+            <strong>• UI/UX &amp; Design Tools:</strong> Adobe XD, Figma, Wireframing, Human-Computer Interaction
+          </p>
+          <p class="entry-details">
+            <strong>• Data Analytics &amp; Tools:</strong> Microsoft Excel (Pivots, Analytics), SQL, Databricks BI
+          </p>
+        </div>
+
+        <!-- Certificates Block -->
+        <div class="resume-section-block">
+          <h3 class="resume-block-title">Certificates</h3>
+          
+          <div class="resume-entry">
+            <div class="entry-head">
+              <span class="entry-role">Introduction to Business Analysis</span>
+              <span class="entry-date">Nov 2025</span>
+            </div>
+            <div class="entry-org">IBM / Coursera</div>
+            <p class="entry-details">Covers business analysis basics, requirements gathering, stakeholder engagement, and gap analysis.</p>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-head">
+              <span class="entry-role">Business Analytics with Excel</span>
+              <span class="entry-date">Nov 2025</span>
+            </div>
+            <div class="entry-org">Microsoft / Simplilearn SkillUp</div>
+            <p class="entry-details">Covers Excel data analysis, pivot tables, statistics, dashboards, and visual reports.</p>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-head">
+              <span class="entry-role">SQL Analytics and BI on Databricks</span>
+              <span class="entry-date">Nov 2025</span>
+            </div>
+            <div class="entry-org">Databricks / Simplilearn SkillUp</div>
+            <p class="entry-details">Covers SQL queries, dashboards, data analysis, and BI visualizations.</p>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-head">
+              <span class="entry-role">Introduction to Cybersecurity</span>
+              <span class="entry-date">Nov 2025</span>
+            </div>
+            <div class="entry-org">Cisco Networking Academy / DICT-ITU DTC Initiative</div>
+            <p class="entry-details">Covers cyber threats, vulnerabilities, attacks, and data protection.</p>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-head">
+              <span class="entry-role">Introduction to Modern AI</span>
+              <span class="entry-date">Nov 2025</span>
+            </div>
+            <div class="entry-org">Cisco Networking Academy / DICT-ITU DTC Initiative</div>
+            <p class="entry-details">Covers AI, machine learning, computer vision, chatbots, and generative AI.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo-avatar" style="width: 28px; height: 28px; font-size: 0.72rem;">AO</div>
+        <span>Angela M. Oñate</span>
+      </div>
+
+      <div class="footer-text">
+        Designed with the Anthurium Palette:
+      </div>
+
+      <div class="footer-palette-swatches">
+        <span class="swatch-dot" style="background: #C2DC80;" title="Sorbet Stem (#C2DC80)"></span>
+        <span class="swatch-dot" style="background: #EA9CAF;" title="Petal Glaze (#EA9CAF)"></span>
+        <span class="swatch-dot" style="background: #D56989;" title="Dusty Orchid (#D56989)"></span>
+        <span class="swatch-dot" style="background: #F3EEF1;" title="Powdered Lilac Grey (#F3EEF1)"></span>
+      </div>
+
+      <div class="footer-text">
+        © 2026 Angela M. Oñate. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
