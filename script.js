@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tags: ['Project Leadership', 'Municipal HRIS', 'Employee Records', 'Attendance Kiosk', 'Role-Based Access'],
       content: `
         <div style="margin-bottom: 1.5rem;">
-          <img src="assets/project-hris.svg" alt="EB Magalona HRIS Dashboard Preview" style="width:100%; border-radius: 12px; margin-bottom: 1.25rem;">
+          <img src="assets/hris-screenshot.png" alt="EB Magalona HRIS Live Interface Preview" style="width:100%; border-radius: 12px; margin-bottom: 1.25rem; box-shadow: var(--shadow-md);">
           
           <div style="background: var(--bg-canvas-subtle); border: 1px solid var(--border-medium); border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 1.25rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
             <div>
