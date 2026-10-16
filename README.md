@@ -26,7 +26,7 @@ Designed using an elegant floral palette inspired by Anthurium flowers:
 
 ## 🌟 Multi-Page Structure & Key Features
 
-The portfolio is structured into 7 dedicated, cleanly separated HTML pages:
+The portfolio is structured into 6 dedicated, cleanly separated HTML pages:
 
 1. **`index.html` (Home)**:
    - High-impact hero section with Angela's actual professional portrait photo.
@@ -37,28 +37,20 @@ The portfolio is structured into 7 dedicated, cleanly separated HTML pages:
    - Comprehensive narrative background detailing Information Systems and UI/UX focus.
    - The 4 core pillars: *Systems Analysis*, *UI/UX Design*, *Business Analytics*, *Project Coordination*.
    - Educational & OJT timeline spanning Elementary to Carlos Hilado Memorial State University (BSIS 2023–2027).
-3. **`projects.html` (Projects)**:
-   - Interactive category filter tabs: *All Works*, *UI/UX Prototypes*, *Systems & Documentation*, *Data & BI Analytics*.
-   - Bespoke vector UI mockups:
-     - *Talisay City BPLO Digital Permitting & Tracking Portal* (Derived from OJT experience).
-     - *CHMSU Degree Progress & Academic Advising Portal*.
-     - *Databricks SQL Lakehouse & BI Visualization Dashboard*.
-     - *Advanced Microsoft Excel Business Analytics & Reporting Model*.
-   - Native `<dialog>` modal with deep-dive problem statements, solutions, and deliverables.
-4. **`skills.html` (Skills)**:
+3. **`skills.html` (Skills)**:
    - Real-time instant search input to filter competencies.
-   - Categorized cards with animated progress meters for Documentation, UI/UX Tools, Project Management, and Analytics.
-5. **`certificates.html` (Certificates)**:
+   - Categorized cards for Documentation, UI/UX Tools, and Project Coordination.
+4. **`certificates.html` (Certificates)**:
    - Verified credentials showcase with interactive verification modals:
      - *Introduction to Business Analysis* (IBM / Coursera)
      - *Business Analytics with Excel* (Microsoft / Simplilearn SkillUp)
      - *SQL Analytics and BI on Databricks* (Databricks / Simplilearn SkillUp)
      - *Introduction to Cybersecurity* (Cisco Networking Academy / DICT-ITU)
      - *Introduction to Modern AI* (Cisco Networking Academy / DICT-ITU)
-6. **`resume.html` (Resume)**:
+5. **`resume.html` (Resume)**:
    - Full pixel-perfect curriculum vitae layout.
    - Dedicated print stylesheet (`@media print`) enabling clean, full-bleed single-page A4 PDF export via the "Print / Save as PDF" button.
-7. **`contact.html` (Contact)**:
+6. **`contact.html` (Contact)**:
    - Direct communication channels: Email (`amonate.chmsu@gmail.com`), Phone (`(+63) 993 386-4528`), and Location (`Talisay City, Negros Occidental`).
    - One-click copy-to-clipboard buttons with toast feedback notifications.
    - Interactive direct message form with real-time field validation.

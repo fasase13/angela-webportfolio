@@ -134,37 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 4. PROJECT CATEGORY FILTERING (projects.html & index.html)
+  // 4. (RESERVED)
   // ==========================================
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
-
-  if (filterBtns.length > 0) {
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-selected', 'false');
-        });
-
-        btn.classList.add('active');
-        btn.setAttribute('aria-selected', 'true');
-
-        const filterValue = btn.getAttribute('data-filter');
-
-        projectCards.forEach(card => {
-          const categories = card.getAttribute('data-category') || '';
-          if (filterValue === 'all' || categories.includes(filterValue)) {
-            card.style.display = 'flex';
-            card.style.opacity = '1';
-            card.style.transform = 'scale(1)';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-  }
 
   // ==========================================
   // 5. SKILLS LIVE SEARCH (skills.html)
@@ -207,52 +178,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalCloseBtn = document.getElementById('modal-close-btn');
 
   const modalData = {
-    'hris-details': {
-      title: 'Human Resource Information System (HRIS) — EB Magalona',
-      subtitle: 'Municipal Government Information System',
-      tags: ['Systems Analysis', 'Employee Records', 'Attendance Kiosk', 'Access Control'],
-      content: `
-        <div style="margin-bottom: 1.5rem;">
-          <img src="assets/hris-screenshot.png" alt="EB Magalona HRIS Live Interface Preview" style="width:100%; border-radius: 12px; margin-bottom: 1.25rem; box-shadow: var(--shadow-md);">
-          
-          <div style="background: var(--bg-canvas-subtle); border: 1px solid var(--border-medium); border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 1.25rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
-            <div>
-              <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); display: block;">Role</span>
-              <strong style="color: var(--accent-primary); font-size: 1.02rem;">Angela M. Oñate — Project Manager &amp; Systems Analyst</strong>
-            </div>
-            <a href="https://hris.lsab.online/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
-              Visit Live System ↗
-            </a>
-          </div>
-
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Project Overview</h4>
-          <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
-            The <strong>EB Magalona HRIS</strong> is a web-based system designed to manage employee records, monitor attendance, and streamline human resource processes in the municipal government. It provides secure and efficient access to HR-related information for authorized personnel.
-          </p>
-
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Key Contributions &amp; Responsibilities</h4>
-          <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
-            <li><strong>Project Coordination:</strong> Organized requirements gathering, milestone tracking, and task scheduling across the development team.</li>
-            <li><strong>Systems Analysis:</strong> Mapped municipal HR workflows, from digital 201 records to automated leave calculation and audit logging.</li>
-            <li><strong>UI/UX Prototyping:</strong> Designed clean, accessible dashboard layouts tailored for municipal employees and administrators.</li>
-            <li><strong>Deployment Support:</strong> Assisted with system testing, authentication security reviews, and live production deployment at <code>hris.lsab.online</code>.</li>
-          </ul>
-
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Key System Modules</h4>
-          <ul style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
-            <li><strong>Employee 201 Records:</strong> Centralized digitized personnel archives, appointment data, and service records.</li>
-            <li><strong>Attendance Kiosk:</strong> Real-time automated time monitoring portal accessible via <code>/attendance/kiosk</code>.</li>
-            <li><strong>Role-Based Security:</strong> Managed permissions for HR officers, department heads, and municipal staff with Google OAuth support.</li>
-          </ul>
-
-          <div style="text-align: center; margin-top: 1.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1.2rem;">
-            <a href="https://hris.lsab.online/login" target="_blank" rel="noopener noreferrer" class="btn btn-stem" style="display: inline-flex;">
-              Open https://hris.lsab.online/login ↗
-            </a>
-          </div>
-        </div>
-      `
-    },
 
     'ibm-ba': {
       title: 'Introduction to Business Analysis',
@@ -631,15 +556,15 @@ EDUCATION:
 - Rafael B. Lacson Memorial High School: Junior High School (2017 - 2021)
 - Talisay South Elementary School (2012 - 2017)
 
-EXPERIENCE & PROJECTS:
+PROFESSIONAL EXPERIENCE:
 - Project Manager & Systems Analyst: Human Resource Information System (HRIS), Municipality of E.B. Magalona (Live: https://hris.lsab.online/login)
   Web-based system designed to manage employee records, monitor attendance, and streamline municipal HR processes.
 - On-the-Job Trainee (OJT): Business Permits and Licensing Office (BPLO), Talisay City Hall, Talisay City, Negros Occidental. Assisted with document handling, data encoding, and office tasks.
 
 SKILLS:
 - Documentation: Research Papers, Reports, System Documentation
-- Project Management: Planning, Task Coordination, Team Collaboration
-- UI/UX & Design Tools: Adobe XD, Figma
+- Project Coordination: Planning, Task Coordination, Team Collaboration
+- UI/UX & Design Tools: Figma, Wireframing, Prototyping, HCI Principles
 - Data & Analytics: Microsoft Excel (Pivots, Analytics), SQL, Databricks BI
 
 CERTIFICATES (Nov 2025):
