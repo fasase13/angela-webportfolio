@@ -57,8 +57,7 @@ The portfolio is structured into 7 dedicated, cleanly separated HTML pages:
      - *Introduction to Modern AI* (Cisco Networking Academy / DICT-ITU)
 6. **`resume.html` (Resume)**:
    - Full pixel-perfect curriculum vitae layout.
-   - Dedicated print stylesheet (`@media print`) enabling clean A4 PDF export via the "Print / Save as PDF" button.
-   - "Copy Text Summary" action for quick resume sharing.
+   - Dedicated print stylesheet (`@media print`) enabling clean, full-bleed single-page A4 PDF export via the "Print / Save as PDF" button.
 7. **`contact.html` (Contact)**:
    - Direct communication channels: Email (`amonate.chmsu@gmail.com`), Phone (`(+63) 993 386-4528`), and Location (`Talisay City, Negros Occidental`).
    - One-click copy-to-clipboard buttons with toast feedback notifications.
